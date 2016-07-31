@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*- 
-import urllib2, urllib, json,threading, copy
+import urllib2, urllib, json,threading, copy, time
 from md_conn import md_conn
 
 class lg_crawler(threading.Thread):
@@ -37,20 +37,22 @@ class lg_crawler(threading.Thread):
         self.conn.col.insert_many(result_list)
     
     def run(self):
-        lock = threading.Lock()
-        lock.acquire()
         self.parse_page()
-        lock.release()
 
 if __name__ == '__main__':
     url = 'http://www.lagou.com/jobs/positionAjax.json'
     thread_pool = []
     thread_num = 10
     conn = md_conn('localhost', 27017)
-
+    i = 1
     for i in range(1, thread_num+1):
         print 'i : ', i
         thread_pool.append( lg_crawler(url, conn, i) )
     
-    for th in thread_pool:
-        th.start()
+    for j in range(10):
+        for th in thread_pool:
+            if th.is_alive() == False:
+                i += 1
+                th = lg_crawler(url, conn, i)
+            th.start()
+        time.sleep(1)
