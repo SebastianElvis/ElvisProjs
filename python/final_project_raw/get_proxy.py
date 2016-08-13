@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
  
 # get the proxy
 of = open('proxy.txt', 'w')
+of.truncate()
 for page in range(1,50):
     url = 'http://www.xicidaili.com/nn/%s' %page
     user_agent = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"
