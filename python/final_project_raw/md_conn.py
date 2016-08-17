@@ -22,3 +22,10 @@ class md_conn:
         self.col.insert_many(result_list)
         self.lock.release()
     
+    def insert_one_to(self, db_name, col_name, single_result):
+        self.lock.acquire()
+        self.select_db(db_name)
+        self.select_collection(col_name)
+        self.col.insert_one(single_result)
+        self.lock.release()
+    
