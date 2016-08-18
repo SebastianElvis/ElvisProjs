@@ -6,7 +6,6 @@ Created on Wed Aug 17 16:12:16 2016
 """
 
 import threading, hashlib
-from json import JSONEncoder
 
 class data_processor(threading.Thread):
     
@@ -16,16 +15,16 @@ class data_processor(threading.Thread):
         self.output_queue = output_queue
         
     def add_hash_to_result(self, single_result):
-        single_result_json = JSONEncoder().encode(single_result)
-        md5 = hashlib.md5(single_result_json).hexdigest()
-        single_result['md5'] = md5
+        single_result_str = str(single_result)
+        md5 = hashlib.md5(single_result_str).hexdigest()
+        single_result['_id'] = md5
         return single_result
         
     def if_dup_md5(self, hashed_single_result):
-        md5 = hashed_single_result['md5']
+        md5 = hashed_single_result['_id']
         self.md_conn.select_db('lagou')
         self.md_conn.select_collection('jobs')
-        if self.md_conn.col.find({"md5":md5}) != None:
+        if self.md_conn.col.find({"_id":md5}).count() > 1:
             return True
         else:
             return False
@@ -37,6 +36,6 @@ class data_processor(threading.Thread):
         while True:
             single_result = self.output_queue.get()
             hashed_single_result = self.add_hash_to_result(single_result)
-            if self.if_dup_md5(hashed_single_result) == False:        
-                self.insert_one_into_db(hashed_single_result)
+            #if self.if_dup_md5(hashed_single_result) == False:        
+            self.insert_one_into_db(hashed_single_result)
         
