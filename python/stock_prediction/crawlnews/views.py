@@ -4,6 +4,8 @@ import datetime
 from django import template
 from django.template.loader import get_template
 from stockdata import StockData
+import json
+
 def hello(request):
     return HttpResponse('Hello World!')
     
@@ -24,4 +26,5 @@ def testtpl(request):
     t = template.Template(html)
     c = template.Context({'name' : 'Elvis'})
     return HttpResponse(t.render(c))
+    
 # Create your views here.
