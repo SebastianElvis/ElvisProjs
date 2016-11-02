@@ -6,9 +6,6 @@ from django.template.loader import get_template
 from stockdata import StockData
 import json
 
-def hello(request):
-    return HttpResponse('Hello World!')
-    
 def index(request):
     #sd = StockData()
     #sd.getDJIA()
@@ -16,15 +13,19 @@ def index(request):
     html = t.render(template.Context({'name':'elvis'}))
     return HttpResponse(html)
     
-def current_datetime(request):
-    now = datetime.datetime.now()
-    html = "<html><body>It is now %s.</body></html>" % now
+def prediction(request):
+    t = get_template('prediction.html')
+    html = t.render(template.Context({'name':'elvis'}))
     return HttpResponse(html)
-
-def testtpl(request):
-    html = 'My name is {{ name }}'
-    t = template.Template(html)
-    c = template.Context({'name' : 'Elvis'})
-    return HttpResponse(t.render(c))
+    
+def stocks(request):
+    t = get_template('stocks.html')
+    html = t.render(template.Context({'name':'elvis'}))
+    return HttpResponse(html)
+    
+def news(request):
+    t = get_template('news.html')
+    html = t.render(template.Context({'name':'elvis'}))
+    return HttpResponse(html)
     
 # Create your views here.
