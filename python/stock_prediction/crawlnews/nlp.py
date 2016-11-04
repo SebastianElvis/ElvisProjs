@@ -2,14 +2,17 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+import logging
 
 class NLP:
     def __init__(self):
-        self.djia_news_csv_dir = '/static/dataset/Combined_News_DJIA.csv'
+        self.djia_news_csv_dir = 'http://127.0.0.1:8000/static/dataset/Combined_News_DJIA.csv'
         self.dataset = pd.read_csv(self.djia_news_csv_dir)
+        logging.debug('Read the dataset succeed!')
         self.train_dataset = self.dataset[self.dataset['Date'] < '2015-01-01']
         self.test_dataset = self.dataset[self.dataset['Date'] > '2014-12-31']
         self.basicmodel = None
+        self.count_vectorizer = CountVectorizer()
  
     def getTrainHeadlines(self):
         trainheadlines = []
@@ -18,8 +21,7 @@ class NLP:
         return trainheadlines
         
     def getTrainSparseMatrix(self):
-        count_vectorizer = CountVectorizer()
-        count_vectorizer_train = count_vectorizer.fit_transform( self.getTrainHeadlines() ) #将trainheadlines转换为稀疏矩阵，表示每日的新闻里每个词出现的次数
+        count_vectorizer_train = self.count_vectorizer.fit_transform( self.getTrainHeadlines() ) #将trainheadlines转换为稀疏矩阵，表示每日的新闻里每个词出现的次数
         return count_vectorizer_train #basictrain是稀疏矩阵（sparse matrix） (x,y),x组数据，y组特征
         
     def startTrain(self):
@@ -30,7 +32,7 @@ class NLP:
         testheadlines = []
         for row in range(0,len(self.test_dataset.index)):
             testheadlines.append(' '.join(str(x) for x in self.test_dataset.iloc[row,2:27]))
-        basictest = CountVectorizer().transform(testheadlines)
+        basictest = self.count_vectorizer.transform(testheadlines)
         predictions = self.basicmodel.predict(basictest)
         return pd.crosstab(self.test_dataset["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
         

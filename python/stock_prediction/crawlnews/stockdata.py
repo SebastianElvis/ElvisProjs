@@ -30,7 +30,7 @@ class StockData:
     def getJSON(self, url, data):
         encoded_data = urllib.urlencode(data)
         print encoded_data
-        req = urllib2.Request(self.baidu_djia_url, encoded_data)
+        req = urllib2.Request(url, encoded_data)
         res_data = json.loads(urllib2.urlopen(req).read())
         return res_data
     
@@ -48,4 +48,4 @@ class StockData:
             all_stock_data.append(self.query_stock(id))
         return all_stock_data
 		
-print StockData().query_all_stock()
+#print StockData().query_all_stock()

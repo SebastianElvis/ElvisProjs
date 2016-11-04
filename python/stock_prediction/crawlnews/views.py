@@ -4,7 +4,8 @@ import datetime
 from django import template
 from django.template.loader import get_template
 from stockdata import StockData
-import json
+from nlp import NLP
+import json, logging
 
 def index(request):
     #sd = StockData()
@@ -14,10 +15,15 @@ def index(request):
     return HttpResponse(html)
     
 def prediction(request):
-    t = get_template('prediction.html')
-    html = t.render(template.Context({'name':'elvis'}))
-    return HttpResponse(html)
-    
+    #t = get_template('prediction.html')
+    #html = t.render(template.Context({'name':'elvis'}))
+    #return HttpResponse(html)
+    nlp = NLP()
+    nlp.startTrain()
+    rt = nlp.regressionTest()
+    print rt
+    return HttpResponse('OK!')
+
 def stocks(request):
     t = get_template('stocks.html')
     html = t.render(template.Context({'name':'elvis'}))
