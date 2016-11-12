@@ -27,36 +27,37 @@ class MjspiderSpider(scrapy.Spider):
         
     def parse_opera(self, response):
         name = response.xpath('//h3').extract()[0].split(' ')[0]
-        if u'高清电影' in name:
+        if 'Movie.html' in response.url:
+            print '-------------------------------MOVIE!-------------------------------\n'
             for line in response.xpath('//tr[@class="Scontent"]'):
                 item = OperaItem()
                 tds = line.xpath('td')
-                item.opera_name = tds[1]
-                item.season_number = 0
-                item.episode_number = 0
-                item.tail = 0
+                item['opera_name'] = tds[1]
+                item['season_number'] = 0
+                item['episode_number'] = 0
+                item['tail'] = 0
                 
-                if len(line.xpath('td/a[@title="百度云盘下载"]/@href')) != 0:
-                    item.baiduyun_link = line.xpath('td/a[@title="百度云盘下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="百度云盘下载"]/@href')) != 0:
+                    item['baiduyun_link'] = line.xpath('td/a[@title="百度云盘下载"]/@href').extract()
                 else: 
-                    item.baiduyun_link = ''
+                    item['baiduyun_link'] = ''
                 
-                if len(line.xpath('td/a[@title="BT美剧片源下载"]/@href')) != 0:
-                    item.bt_link = line.xpath('td/a[@title="BT美剧片源下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="BT美剧片源下载"]/@href')) != 0:
+                    item['bt_link'] = line.xpath('td/a[@title="BT美剧片源下载"]/@href').extract()
                 else: 
-                    item.bt_link = ''
+                    item['bt_link'] = ''
                 
-                if len(line.xpath('td/a[@title="磁力链高清美剧下载"]/@href')) != 0:
-                    item.magnet_link = line.xpath('td/a[@title="磁力链高清美剧下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="磁力链高清美剧下载"]/@href')) != 0:
+                    item['magnet_link'] = line.xpath('td/a[@title="磁力链高清美剧下载"]/@href').extract()
                 else: 
-                    item.magnet_link = ''
+                    item['magnet_link'] = ''
                 
-                if len(line.xpath('td/a[@title="ed2k高清片源"]/@href')) != 0:
-                    item.ed2k_link = line.xpath('td/a[@title="ed2k高清片源"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="ed2k高清片源"]/@href')) != 0:
+                    item['ed2k_link'] = line.xpath('td/a[@title="ed2k高清片源"]/@href').extract()
                 else: 
-                    item.ed2k_link = ''
+                    item['ed2k_link'] = ''
                 
-                item.resolution = None
+                item['resolution'] = None
                 yield item
         
         else:
@@ -66,31 +67,36 @@ class MjspiderSpider(scrapy.Spider):
                 item['opera_name'] = name
                 
                 session_episode_p = re.compile('S[0-9]{1,2}E[0-9]{1,2}') 
-                item.season_number = int(session_episode_p.findall(tds[1].extract())[0].split('E')[0][1:])
-                item.episode_number = int(session_episode_p.findall(tds[1].extract())[0].split('E')[1])
-                item.tail = 0
+                try:
+                    item['season_number'] = int(session_episode_p.findall(tds[1].extract())[0].split('E')[0][1:]) if True else 0
+                    item['episode_number'] = int(session_episode_p.findall(tds[1].extract())[0].split('E')[1]) if True else 0
+                except Exception:
+                    item['season_number'] = -1
+                    item['episode_number'] = -1
+                    
+                item['tail'] = 0
                 
-                if len(line.xpath('td/a[@title="百度云盘下载"]/@href')) != 0:
-                    item.baiduyun_link = line.xpath('td/a[@title="百度云盘下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="百度云盘下载"]/@href')) != 0:
+                    item['baiduyun_link'] = line.xpath(u'td/a[@title="百度云盘下载"]/@href').extract()
                 else: 
-                    item.baiduyun_link = ''
+                    item['baiduyun_link'] = ''
                 
-                if len(line.xpath('td/a[@title="BT美剧片源下载"]/@href')) != 0:
-                    item.bt_link = line.xpath('td/a[@title="BT美剧片源下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="BT美剧片源下载"]/@href')) != 0:
+                    item['bt_link'] = line.xpath(u'td/a[@title="BT美剧片源下载"]/@href').extract()
                 else: 
-                    item.bt_link = ''
+                    item['bt_link'] = ''
                 
-                if len(line.xpath('td/a[@title="磁力链高清美剧下载"]/@href')) != 0:
-                    item.magnet_link = line.xpath('td/a[@title="磁力链高清美剧下载"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="磁力链高清美剧下载"]/@href')) != 0:
+                    item['magnet_link'] = line.xpath(u'td/a[@title="磁力链高清美剧下载"]/@href').extract()
                 else: 
-                    item.magnet_link = ''
+                    item['magnet_link'] = ''
                 
-                if len(line.xpath('td/a[@title="ed2k高清片源"]/@href')) != 0:
-                    item.ed2k_link = line.xpath('td/a[@title="ed2k高清片源"]/@href').extract()
+                if len(line.xpath(u'td/a[@title="ed2k高清片源"]/@href')) != 0:
+                    item['ed2k_link'] = line.xpath(u'td/a[@title="ed2k高清片源"]/@href').extract()
                 else: 
-                    item.ed2k_link = ''
+                    item['ed2k_link'] = ''
                 
-                item.resolution = None
+                item['resolution'] = None
                 yield item
         
         base_url = urlparse.urlparse(response.url)

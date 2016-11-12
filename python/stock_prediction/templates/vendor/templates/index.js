@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	var my_apikey = '596fe855925b9355e516ae327f4528ca';
 	var apiurl = 'http://apis.baidu.com/apistore/stockservice/usastock?stockid=bidu&list=1';
-
+     
+     //get djia now
 	$.ajax({
 		url: apiurl,
 		method: 'POST',
@@ -14,7 +15,18 @@ $(document).ready(function(){
 			$("#djia").html(DJIA.startdot);
 		}
 
-	})
+	});
+    
+    //get previous djia
+    $.get('/static/dataset/stock-DJI.json', function (rawData) {
+        
+        //console.log(rawData) 
+        var data = splitData(eval(rawData));
+
+        var myChart = echarts.init(document.getElementById('djia-kline'));
+    
+        drawDJIAChart(myChart, data);
+    });
 });
 
 /*

@@ -19,8 +19,8 @@ from crawlnews.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/$', hello),
-    url(r'^now/$', current_datetime),
-    url(r'^testtpl/$', testtpl),
     url(r'^index/$', index),
+    url(r'^prediction/$', prediction),
+    url(r'^stocks/$', stocks),
+    url(r'^news/$', news),
 ]
