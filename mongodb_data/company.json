@@ -1,0 +1,121 @@
+{
+	"_id" : ObjectId("58390fb6d968731af6258cda"),
+	"code" : "SINA",
+	"name" : "新浪",
+	"keyword" : [
+		"新浪",
+		"微博",
+		"weibo",
+		"互联网"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258cdb"),
+	"code" : "TCTZF",
+	"name" : "腾讯",
+	"keyword" : [
+		"腾讯",
+		"tencent",
+		"微信",
+		"wechat",
+		"社交"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258cdc"),
+	"code" : "BABA",
+	"name" : "阿里巴巴",
+	"keyword" : [
+		"alibaba",
+		"阿里巴巴",
+		"淘宝",
+		"天猫",
+		"电商",
+		"阿里"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258cdd"),
+	"code" : "JD",
+	"name" : "京东",
+	"keyword" : [
+		"京东",
+		"电商"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258cde"),
+	"code" : "CHL",
+	"name" : "中国移动",
+	"keyword" : [
+		"中国移动",
+		"cmcc",
+		"通信",
+		"电信",
+		"4g",
+		"5g",
+		"运营商"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258cdf"),
+	"code" : "CHA",
+	"name" : "中国电信",
+	"keyword" : [
+		"中国电信",
+		"通信",
+		"电信",
+		"4g",
+		"5g",
+		"运营商"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258ce0"),
+	"code" : "CHU",
+	"name" : "中国联通",
+	"keyword" : [
+		"中国联通",
+		"通信",
+		"电信",
+		"4g",
+		"5g",
+		"运营商"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258ce1"),
+	"code" : "NTES",
+	"name" : "网易",
+	"keyword" : [
+		"网易",
+		"互联网"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258ce2"),
+	"code" : "JMEI",
+	"name" : "聚美优品",
+	"keyword" : [
+		"聚美优品",
+		"电商"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258ce3"),
+	"code" : "SOHU",
+	"name" : "搜狐",
+	"keyword" : [
+		"搜狐",
+		"互联网"
+	]
+},
+{
+	"_id" : ObjectId("58390fb6d968731af6258ce4"),
+	"code" : "BIDU",
+	"name" : "百度",
+	"keyword" : [
+		"百度",
+		"搜索引擎"
+	]
+},
