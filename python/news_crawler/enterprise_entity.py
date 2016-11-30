@@ -8,24 +8,23 @@ import datetime, time
 
 
 class EnterpriseEntity:
-    def __init__(self, code, abbr, name, keyword, subreddit):
+    def __init__(self, code, abbr, name, keyword):
         self.code = code
         self.abbr = abbr
         self.name = name
         self.keyword = keyword
-        self.subreddit = subreddit
         self.last_crawled_day = None
 
-    def search_by_day(self, dt):
+    def search_by_day(self, dt, subreddit):
         timestamp_tuple = EnterpriseEntity.convert_date_to_ts(dt)
         t1 = timestamp_tuple[0]
         t2 = timestamp_tuple[1]
-        query = '(and timestamp:' + str(t1) + '..' + str(t2) + ' title:\"' + self.keyword + '\")'
-        search_list = self.subreddit.search(query,
+        query = '(and timestamp:' + str(t1) + '..' + str(t2) + ' text:\'' + self.keyword + '\')'
+        search_list = subreddit.search(query,
                               sort='hot',
                               syntax='cloudsearch',
                               time_filter='all')
-        l = []
+        l = [] # submission list
         i = 0
         for item in search_list:
             if i >= 25:
@@ -46,7 +45,7 @@ class EnterpriseEntity:
         return (timeStamp1, timeStamp2)
 
     @classmethod
-    def get_entities_from_csv(cls, subreddit):
+    def get_entities_from_csv(cl):
         entities = []
         file = open('./stockdata/chosen-stocks.csv')
         csv_content = file.readlines()
@@ -56,6 +55,5 @@ class EnterpriseEntity:
             entities.append( EnterpriseEntity(splitted_line[0],
                                              splitted_line[1], 
                                              splitted_line[2], 
-                                             splitted_line[3],
-                                             subreddit) )
+                                             splitted_line[3]) )
         return entities
