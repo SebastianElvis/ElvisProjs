@@ -7,6 +7,7 @@ This is a temporary script file.
 
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 data = pd.read_csv('templates/vendor/dataset/Combined_News_DJIA.csv')
@@ -29,7 +30,7 @@ trainheadlines = []
 for row in range(0,len(train.index)):
     trainheadlines.append(' '.join(str(x) for x in train.iloc[row,2:27]))
     
-basicvectorizer = CountVectorizer()
+basicvectorizer = TfidfVectorizer()
 basictrain = basicvectorizer.fit_transform(trainheadlines) #将trainheadlines转换为稀疏矩阵，表示每日的新闻里每个词出现的次数
 print(basictrain.shape) #basictrain是稀疏矩阵（sparse matrix） (x,y),x组数据，y组特征
 
@@ -43,7 +44,7 @@ for row in range(0,len(test.index)):
 basictest = basicvectorizer.transform(testheadlines)
 predictions = basicmodel.predict(basictest)
 
-pd.crosstab(test["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
+print pd.crosstab(test["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
 
 basicwords = basicvectorizer.get_feature_names()
 basiccoeffs = basicmodel.coef_.tolist()[0]

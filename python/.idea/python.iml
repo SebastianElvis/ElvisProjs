@@ -13,6 +13,11 @@
     </option>
   </component>
   <component name="TestRunnerService">
+<<<<<<< HEAD
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+=======
+    <option name="projectConfiguration" value="Nosetests" />
+    <option name="PROJECT_TEST_RUNNER" value="Nosetests" />
+>>>>>>> origin/master
   </component>
 </module>
