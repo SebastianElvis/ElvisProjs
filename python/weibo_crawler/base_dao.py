@@ -19,6 +19,11 @@ class BaseDAO:
             result.append(cursor.next())
         return result # list[dict]
 
+    def get_all_referers(self):
+        r = self.find_all('data_source')
+        l = [ds['url'] for ds in r]
+        return l
+
 if __name__ == '__main__':
     dao = BaseDAO()
     r =  dao.find_all('company')
