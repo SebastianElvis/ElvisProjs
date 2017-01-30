@@ -1,4 +1,3 @@
-import logging
 import threading
 import urllib
 import urllib2
@@ -18,12 +17,12 @@ class WeiboCrawler(threading.Thread):
         self.mongo_dao = mongo_dao  # MongoDAO
         self.sleep_interval = (3, 7)
 
-
         # find the last page of the data source
         current_object_id = str(target_data_source['_id'])
         ds_tmp_query = mongo_dao.get_col('record')\
                                 .find({'poster_id': current_object_id})\
                                 .sort('page_num', pymongo.DESCENDING)
+
         #print 'ds_tmp_query ---------------', ds_tmp_query.count()
         if ds_tmp_query.count() == 0:  # no records
             self.page_num = page_num
@@ -42,7 +41,7 @@ class WeiboCrawler(threading.Thread):
         print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
 
         # url
-        if url == None:
+        if url is None:
             url = self.target_data_source['url']
 
         # get method data and headers
@@ -59,7 +58,7 @@ class WeiboCrawler(threading.Thread):
         except:
             print  'Exception detected when crawling page ' + str(page_num)
             print 'The request header is ' + str(req.headers)
-            if resp != None:
+            if resp is not None:
                 print 'The response code is ' + str( resp.getcode() )
                 print 'The response header is ' + str(resp.headers.dict)
             else:
@@ -73,7 +72,7 @@ class WeiboCrawler(threading.Thread):
         record_list = weibo_utils.get_records_from_html(html, page_num, poster_id=object_id_str)
 
         # insert the records into the weibo database -> record collection
-        if record_list == None or len(record_list) == 0:
+        if record_list is None or len(record_list) == 0:
             print 'Crawl error!'
             print 'The request header is ' + str(req.headers)
             print 'Login required!'
@@ -100,7 +99,7 @@ if __name__ == '__main__':
     ds = dao.find_all('data_source')[0]
     t = WeiboCrawler(ds, dao)
     t.start()
-    while( t.is_alive is False ):
+    while t.is_alive is not True:
         t = WeiboCrawler(ds, dao)
         t.start()
 

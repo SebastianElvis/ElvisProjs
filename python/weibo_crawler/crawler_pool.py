@@ -1,7 +1,6 @@
 from base_dao import BaseDAO
 from weibo_crawler import WeiboCrawler
-import urllib2
-import weibo_utils
+
 
 class CrawlerPool:
     def __init__(self):
@@ -31,4 +30,4 @@ class CrawlerPool:
 
 if __name__ == '__main__':
     cp = CrawlerPool()
-    cp.start_crawl_one(0)
+    cp.start_crawl_all()

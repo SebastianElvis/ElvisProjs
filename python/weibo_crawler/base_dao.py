@@ -26,5 +26,5 @@ class BaseDAO:
 
 if __name__ == '__main__':
     dao = BaseDAO()
-    r =  dao.find_all('company')
+    r = dao.find_all('company')
     print r

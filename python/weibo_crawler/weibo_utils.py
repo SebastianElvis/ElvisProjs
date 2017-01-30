@@ -32,6 +32,7 @@ def generate_header():
     # header_dict['Upgrade-Insecure-Requests'] = '1'
     return header_dict
 
+
 class CJsonEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, datetime.datetime):
@@ -91,10 +92,12 @@ def get_records_from_html(html, page_num, poster_id=''):
 
     return record_list
 
+
 class RedirctHandler(urllib2.HTTPRedirectHandler):
     """docstring for RedirctHandler"""
     def http_error_301(self, req, fp, code, msg, headers):
         pass
+    
     def http_error_302(self, req, fp, code, msg, headers):
         pass
 
