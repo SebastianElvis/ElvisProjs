@@ -10,11 +10,7 @@
     <title>Stock Market Prediction System</title>
     
     {% load static %}
-
-    <link href="{% static "bootstrap/css/bootstrap.min.css " %}" rel="stylesheet">
-    <link href="{% static "metisMenu/metisMenu.min.css " %}" rel="stylesheet">
-    <link href="{% static "css/sb-admin-2.css " %}" rel="stylesheet">
-    <link href="{% static "font-awesome/css/font-awesome.min.css " %}" rel="stylesheet" type="text/css"> 
+    {% include "includes/css.html" %}
 
 </head>
 
@@ -53,85 +49,12 @@
                         <li>
                             <a href="/prediction"><i class="fa fa-edit fa-fw"></i> Prediction</a>
                         </li>
-                        <!-- <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                        </li> -->
                         <li>
                             <a href="/stocks"><i class="fa fa-table fa-fw"></i> Stocks</a>
                         </li>
                         <li>
                             <a href="/news"><i class="fa fa-edit fa-fw"></i> News</a>
                         </li>
-                       <!--  <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                        </li> -->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -186,14 +109,8 @@
     </div>
     <!-- /#wrapper -->
 
-    <script src="{% static "jquery/jquery.min.js " %}"></script>
-    <script src="{% static "bootstrap/js/bootstrap.min.js " %}"></script>
-    <script src="{% static "metisMenu/metisMenu.min.js " %}"></script>
-    <script src="{% static "echarts/echarts.min.js " %}"></script> 
-    <script src="{% static "js/sb-admin-2.js " %}"></script>
-    <script src="{% static "dataset/jquery-csv.min.js " %}"></script> 
-    <script src="{% static "templates/linechart_generator.js " %}"></script>
-    <script src="{% static "templates/index.js " %}"></script> 
+    {% include "includes/js.html" %}
+    <script src="{% static "main/index.js " %}"></script>
 </body>
 
 </html>

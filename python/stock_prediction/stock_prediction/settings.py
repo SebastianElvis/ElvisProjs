@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from crawlnews import stockdata
-from crawlnews import nlp
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -73,8 +71,7 @@ TEMPLATES = [
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "templates/vendor"),
-    os.path.join(BASE_DIR, "templates/data"),
-    os.path.join(BASE_DIR, "templates/dist"),
+    os.path.join(BASE_DIR, "templates/vendor/sb-admin"),
 ]
 
 WSGI_APPLICATION = 'stock_prediction.wsgi.application'
@@ -128,3 +125,49 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'formatters': {
+        'standard': {
+            'format': '%(levelname)s %(asctime)s %(filename)s %(module)s %(funcName)s %(lineno)d: %(message)s'
+        },
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+             'formatter': 'standard'
+        },
+        'file_handler': {
+             'level': 'DEBUG',
+             'class': 'logging.handlers.TimedRotatingFileHandler',
+             'filename': BASE_DIR + '/log/django.log',
+             'formatter': 'standard'
+        },
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file_handler', 'console'],
+            'level': 'DEBUG',
+            'propagate': True
+        },
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    }
+}

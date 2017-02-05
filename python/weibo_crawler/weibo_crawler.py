@@ -15,7 +15,7 @@ class WeiboCrawler(threading.Thread):
         threading.Thread.__init__(self)
         self.target_data_source = target_data_source  # dict
         self.mongo_dao = mongo_dao  # MongoDAO
-        self.sleep_interval = (3, 7)
+        self.sleep_interval = (0, 10)
 
         # find the last page of the data source
         current_object_id = str(target_data_source['_id'])
@@ -35,72 +35,56 @@ class WeiboCrawler(threading.Thread):
 
     def run(self):
         print 'Start crawl thread ' + self.target_data_source['name'] + '!'
-        self.crawl(self.crawl, page_num=self.page_num)
+        self.crawl(page_num=self.page_num)
 
-    def crawl(self, callback, url=None, page_num=1, ):
-        print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
+    def crawl(self, url=None, page_num=1):
+        while True:
+            print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
 
-        # url
-        if url is None:
-            url = self.target_data_source['url']
+            # url
+            if url is None:
+                url = self.target_data_source['url']
 
-        # get method data and headers
-        get_data = urllib.urlencode({'page': page_num, 'vt': 4})
-        header_dict = weibo_utils.generate_header()
+            # get method data and headers
+            get_data = urllib.urlencode({'page': page_num, 'vt': 4})
+            header_dict = weibo_utils.generate_header()
 
-        # request obj
-        req = urllib2.Request(url, data=get_data, headers=header_dict )
-        resp, html = None, None
-        # try to get the html
-        try:
-            resp = urllib2.urlopen(req, timeout=5)
-            html = resp.read()
-        except:
-            print  'Exception detected when crawling page ' + str(page_num)
-            print 'The request header is ' + str(req.headers)
-            if resp is not None:
-                print 'The response code is ' + str( resp.getcode() )
-                print 'The response header is ' + str(resp.headers.dict)
+            # request obj
+            req = urllib2.Request(url, data=get_data, headers=header_dict)
+            resp, html = None, None
+            # try to get the html
+            try:
+                resp = urllib2.urlopen(req, timeout=5)
+                html = resp.read()
+            except:
+                print  'Exception detected when crawling page ' + str(page_num)
+                print 'The request header is ' + str(req.headers)
+                if resp is not None:
+                    print 'The response code is ' + str(resp.getcode())
+                    print 'The response header is ' + str(resp.headers.dict)
+                else:
+                    print 'Response refused --- null !'
+                    continue
+
+            # object id obj to str
+            object_id_str = str(self.target_data_source['_id'])
+            # get the record list from html
+            record_list = weibo_utils.get_records_from_html(html, page_num, poster_id=object_id_str)
+
+            # insert the records into the weibo database -> record collection
+            if record_list is None or len(record_list) == 0:
+                print 'Crawl error!'
+                print 'The request header is ' + str(req.headers)
+                print 'Login required!'
+                continue
             else:
-                print 'Response refused --- null !'
-                callback(self.crawl, page_num=self.page_num)
-            return None
+                self.mongo_dao.get_col('record').insert_many(record_list)
 
-        # object id obj to str
-        object_id_str = str(self.target_data_source['_id'])
-        # get the record list from html
-        record_list = weibo_utils.get_records_from_html(html, page_num, poster_id=object_id_str)
+            # crawl the next page
+            self.page_num += 1
+            print 'Finish'
+            print weibo_utils.line
 
-        # insert the records into the weibo database -> record collection
-        if record_list is None or len(record_list) == 0:
-            print 'Crawl error!'
-            print 'The request header is ' + str(req.headers)
-            print 'Login required!'
-            callback(self.crawl, page_num=self.page_num)
-        else:
-            self.mongo_dao.get_col('record').insert_many(record_list)
-
-        # crawl the next page
-        self.page_num += 1
-        print  'Finish'
-        print weibo_utils.line
-
-        # sleep for some seconds to fight against the Anti-Spider System
-        time.sleep(random.uniform(self.sleep_interval[0],
-                                  self.sleep_interval[1]) )
-        try:
-            callback(self.crawl, page_num=self.page_num)
-        except:
-            return self.page_num
-
-
-if __name__ == '__main__':
-    dao = BaseDAO()
-    ds = dao.find_all('data_source')[0]
-    t = WeiboCrawler(ds, dao)
-    t.start()
-    while t.is_alive is not True:
-        t = WeiboCrawler(ds, dao)
-        t.start()
-
-    print "Thread start!"
+            # sleep for some seconds to fight against the Anti-Spider System
+            time.sleep(random.uniform(self.sleep_interval[0],
+                                      self.sleep_interval[1]))

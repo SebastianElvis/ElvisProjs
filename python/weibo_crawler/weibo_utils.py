@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import urllib2, pymongo, bs4, re, datetime, json, hashlib
+import urllib2, bs4, re, datetime, json, hashlib
 from record import Record
 from random_list import RandomList
 from base_dao import BaseDAO
@@ -18,18 +18,18 @@ def generate_header():
 
     # cookie
     cookie_str = '''
-                _T_WM=8035356e24c14051a0f1aaa20d0575be; SUB=_2A251TibrDeRxGeRN61EX9CrJyjyIHXVWsUqjrDV6PUJbkdAKLUnzkW2NJypaYNZIe2WCLFXvvHJ8G2aUVA..; gsid_CTandWM=4uST399e1QjsLHPXzZerU9Fhy8e
+ALF=1488782400; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0U14P9WXQBr0xN; SSOLoginState=1486192551
                  '''.strip()
     header_dict['Cookie'] = cookie_str
-    header_dict['Accept-Language'] = 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4'
+    header_dict['Accept-Language'] = 'zh-CN,zh;q=0.8'
     header_dict['User-Agent'] = r_list.get_random_ua()
     header_dict['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
     #header_dict['Accept-Encoding'] = 'gzip, deflate, sdch'
-    #header_dict['Cache-Control'] = 'max-age=0'
+    header_dict['Cache-Control'] = 'max-age=0'
     header_dict['Connection'] = 'keep-alive'
     header_dict['Host'] =  'weibo.cn'
     header_dict['Referer'] = 'weibo.cn' # r_list.get_random(referers)
-    # header_dict['Upgrade-Insecure-Requests'] = '1'
+    header_dict['Upgrade-Insecure-Requests'] = '1'
     return header_dict
 
 

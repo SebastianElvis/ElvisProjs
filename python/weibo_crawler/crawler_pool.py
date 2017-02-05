@@ -17,6 +17,7 @@ class CrawlerPool:
         self.pool = [WeiboCrawler(single_ds, dao) for single_ds in ds]
         i = 0
         for one in self.pool:
+            one.sleep_interval = [j*len(self.pool) for j in one.sleep_interval]
             print 'Thread ' + str(i) + ' --- ' + one.target_data_source['name']
             i += 1
 
@@ -30,4 +31,4 @@ class CrawlerPool:
 
 if __name__ == '__main__':
     cp = CrawlerPool()
-    cp.start_crawl_all()
+    cp.start_crawl_one(1)

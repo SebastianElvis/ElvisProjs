@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from crawlnews.views import *
+from module_prediction.views import *
+from module_data_access.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -23,4 +24,6 @@ urlpatterns = [
     url(r'^prediction/$', prediction),
     url(r'^stocks/$', stocks),
     url(r'^news/$', news),
+    url(r'^companies/$', get_all_companies),
+    url(r'^getfile/$', get_file),
 ]

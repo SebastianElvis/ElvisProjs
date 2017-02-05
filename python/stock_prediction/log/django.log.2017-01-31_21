@@ -1,0 +1,188 @@
+DEBUG 2017-01-31 21:16:23,013 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:16:23,016 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:16:40,546 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:16:40,551 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:16:47,901 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:16:48,375 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:16:48,380 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:16:50,096 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:16:50,096 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+DEBUG 2017-01-31 21:17:53,841 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:17:53,842 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:17:56,664 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:17:57,128 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:17:57,134 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:17:58,678 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:17:58,678 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+DEBUG 2017-01-31 21:17:59,130 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:18:32,437 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:18:32,440 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:18:36,891 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:18:36,895 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:18:39,469 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:18:39,960 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:18:39,963 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:18:41,894 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:18:41,895 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+
+INFO 2017-01-31 21:18:42,496 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 27: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:18:42,503 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:19:25,210 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:19:25,214 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:19:30,263 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:19:30,859 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:19:30,865 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:19:33,322 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:19:33,322 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+
+INFO 2017-01-31 21:19:33,801 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 27: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:19:33,806 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:19:33,806 D:\ElvisProjs\python\stock_prediction\module_prediction\views.py views.py views prediction 23: The id of NLP Object is ---363635768
+DEBUG 2017-01-31 21:21:23,486 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:21:23,490 C:\Python27\lib\site-packages\django\db\backends\utils.py utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:21:41,542 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:21:41,973 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:21:41,982 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:21:43,823 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:21:43,823 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+
+INFO 2017-01-31 21:21:44,193 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 27: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:21:44,197 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:21:44,197 D:\ElvisProjs\python\stock_prediction\module_prediction\views.py views.py views prediction 23: The id of NLP Object is ---348648448
+DEBUG 2017-01-31 21:21:58,579 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:21:58,780 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:21:58,788 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:22:00,480 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:22:00,480 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 25: Start regression test
+
+INFO 2017-01-31 21:22:00,851 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 27: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:22:00,855 D:\ElvisProjs\python\stock_prediction\module_prediction\nlp.py nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:22:00,855 D:\ElvisProjs\python\stock_prediction\module_prediction\views.py views.py views prediction 23: The id of NLP Object is ---348648448
+DEBUG 2017-01-31 21:22:36,095 utils.py utils execute 89: (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:22:36,099 utils.py utils execute 89: (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:22:48,305 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:22:48,763 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:22:48,769 nlp.py nlp __init__ 22: Start to train NLP Model
+INFO 2017-01-31 21:22:50,466 nlp.py nlp __init__ 24: Train NLP Model success!
+DEBUG 2017-01-31 21:22:50,467 nlp.py nlp __init__ 25: Start regression test
+
+INFO 2017-01-31 21:22:50,836 nlp.py nlp __init__ 27: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:22:50,839 nlp.py nlp __init__ 28: Regression test successful
+DEBUG 2017-01-31 21:22:50,841 views.py views prediction 23: The id of NLP Object is ---348734464
+DEBUG 2017-01-31 21:34:21,868 utils.py utils execute 89: (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:34:21,872 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:50:21,456 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:50:21,460 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:50:39,648 views.py views prediction 22: The id of NLP Object is ---318716104
+DEBUG 2017-01-31 21:50:45,381 views.py views prediction 22: The id of NLP Object is ---318716104
+DEBUG 2017-01-31 21:51:30,414 views.py views prediction 22: The id of NLP Object is ---318716104
+DEBUG 2017-01-31 21:52:49,282 utils.py utils execute 89: (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:52:49,286 utils.py utils execute 89: (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:52:58,461 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:52:58,466 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:53:17,701 views.py views prediction 22: The id of NLP Object is ---316434632
+DEBUG 2017-01-31 21:53:23,056 views.py views prediction 22: The id of NLP Object is ---316434632
+DEBUG 2017-01-31 21:56:34,539 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-01-31 21:56:34,540 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:56:34,661 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:56:34,667 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-01-31 21:56:36,173 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-01-31 21:56:36,173 nlp.py nlp __init__ 24: Start regression test
+
+INFO 2017-01-31 21:56:36,532 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:56:36,536 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-01-31 21:56:36,538 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-01-31 21:56:36,568 utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:56:36,569 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:56:51,098 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-01-31 21:56:51,101 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:56:51,220 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:56:51,226 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-01-31 21:56:52,759 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-01-31 21:56:52,759 nlp.py nlp __init__ 24: Start regression test
+
+INFO 2017-01-31 21:56:53,128 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:56:53,131 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-01-31 21:56:53,132 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-01-31 21:56:53,164 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:56:53,167 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-01-31 21:57:33,138 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-01-31 21:57:33,138 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-01-31 21:57:33,260 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-01-31 21:57:33,266 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-01-31 21:57:34,782 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-01-31 21:57:34,782 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-01-31 21:57:35,135 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-01-31 21:57:35,140 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-01-31 21:57:35,141 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-01-31 21:57:35,173 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-01-31 21:57:35,174 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
