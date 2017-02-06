@@ -9,7 +9,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-data = pd.read_csv('../templates/vendor/dataset/Combined_News_DJIA.csv')
+data = pd.read_csv('../dataset/Combined_News_DJIA.csv')
 
 train = data[data['Date'] < '2015-01-01']
 test = data[data['Date'] > '2014-12-31']
@@ -34,7 +34,7 @@ basicvectorizer = TfidfVectorizer()
 basictrain = basicvectorizer.fit_transform(trainheadlines)
 # basictrain is a sparse matrix
 # (x,y),x组数据，y组特征
-print 'The shape of the sparce matrix', -- basictrain.shape
+print 'The shape of the sparce matrix -- ',basictrain.shape
 
 basicmodel = LogisticRegression() # 逻辑回归分类器
 basicmodel = basicmodel.fit(basictrain, train["Label"])  # 输入数据，分类目标，开始训练
@@ -46,7 +46,8 @@ for row in range(0,len(test.index)):
 basictest = basicvectorizer.transform(testheadlines)
 predictions = basicmodel.predict(basictest)
 
-print pd.crosstab(test["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
+result = pd.crosstab(test["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
+print result
 
 basicwords = basicvectorizer.get_feature_names()
 basiccoeffs = basicmodel.coef_.tolist()[0]

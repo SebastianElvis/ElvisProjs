@@ -17,9 +17,9 @@ class BaseDAO:
         result = []
         for i in range(cursor.count()):
             result.append(cursor.next())
-        return result # list[dict]
+        return result  # list[dict]
 
-    def get_all_referers(self):
+    def get_all_data_sources(self):
         r = self.find_all('data_source')
         l = [ds['url'] for ds in r]
         return l
@@ -29,6 +29,19 @@ class BaseDAO:
         for company in companies:
             company['_id'] = str(company['_id'])
         return companies
+
+    def get_records(self, page=1, num=10, type='all', sort=1):
+        condition_dict = {}
+        if type is not 'all':
+            condition_dict['type'] = type
+        record_col = self.get_col('record')
+        records_cursor = record_col.find(condition_dict).sort('time', sort).limit(num).skip((page-1)*num)
+        records_list = []
+        for s in records_cursor:
+            s['_id'] = str(s['_id'])
+            records_list.append(s)
+        return records_list
+
 
 dao = BaseDAO()
 

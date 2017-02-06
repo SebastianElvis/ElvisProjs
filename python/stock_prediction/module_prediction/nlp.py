@@ -38,7 +38,7 @@ class NLP:
         self.djia_news_csv_dir = '../dataset/Combined_News_DJIA.csv'
         self.dataset = pd.read_csv(self.djia_news_csv_dir)
         logger.debug('Read the dataset succeed!')
-        self.train_dataset, self.test_dataset = NLP.divide_train_test(self.dataset, '2016-01-01')
+        self.train_dataset, self.test_dataset = NLP.divide_train_test(self.dataset, '2015-04-01')
         
         # different models for different dataset
         self.financial_model = None
@@ -70,6 +70,7 @@ class NLP:
 
     def regression_test(self, model_type='financial'):
         test_sparse_matrix = NLP.vectorizer.transform(NLP._get_daily_data_collection(self.test_dataset))
+        # predictions is an index array which indicates the predictioin result of the test dataset
         if model_type is 'financial':
             predictions = self.financial_model.predict(test_sparse_matrix)
         elif model_type is 'tech':
@@ -77,7 +78,10 @@ class NLP:
         else:  # TODO
             predictions = None
             pass
-        return pd.crosstab(self.test_dataset["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
+
+        # type(result) -> pandas.core.frame.DataFrame
+        result = pd.crosstab(self.test_dataset["Label"], predictions, rownames=["Actual"], colnames=["Predicted"])
+        return result
 
 
 logger.debug('Start to initialize the NLP Object')

@@ -21,38 +21,54 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">News from <a href="http://weibo.cn">Sina Weibo</a></h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <!-- /.col-lg-6 -->
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Information today
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="alert alert-info" role="alert">
-                                <p>Dow Jones Industry Average(DJIA) Today: <span id="djia"></span></p>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                    <table class="table table-bordered" id>
+                        <thead>
+                            <tr>
+                                <th>Poster</th>
+                                <th>Content</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
             </div>
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
     </div>
     <!-- /#wrapper -->
-
     {% include "includes/js.html" %}
-    <script src="{% static "main/index.js " %}"></script>
+    <script>
+        $(document).ready(function(){
+            var table_obj = $('table')[0];
+            var tbody_obj = table_obj.children('tbody')[0]
+            var url = '/getrecords?'
+                    + 'page=' + {{ page }}
+                    + 'num' + {{ num }}
+                    + 'type' + {{ type }}
+                    + 'sort' + {{ sort }};
+            $.getJSON(url, function(data){
+                var tr = $('<tr></tr>');
+                for(i=0;i<data.length;i++){
+                    var td1 = $('<td></td>');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

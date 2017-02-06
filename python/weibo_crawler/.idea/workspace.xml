@@ -1,240 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ec7713a-3424-466e-b747-36e24951e02f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/items.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/pipelines.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/spiders/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/final_project/spiders/lgspider.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project/scrapy.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/data_processor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/get_proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/lg_crawler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/md_conn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/proxy.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/proxy_list.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../final_project_raw/random_ua.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/news_crawler.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/praw.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/reddit_crawler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/AA.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/AXP.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/BA.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/C.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/CAT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/DD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/DIS.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/EK.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/GE.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/GM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/HD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/HON.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/HPQ.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/IBM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/INTC.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/IP.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/JNJ.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/JPM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/KO.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/MCD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/MMM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/MO.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/MRK.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/MSFT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/PG.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/SBC.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/Symbols.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/T.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/UTX.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/WMT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/XOM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/^DJI.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/stockdata/chosen-stocks.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/subreddit_entity.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../pwk/smtpvrfy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/1pass00.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/1pass01.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/1pass02.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/1pass03.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/sshbrute.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sshbrute/userlist.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/nlp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/stockdata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/crawlnews/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/AA.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/AXP.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/BA.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/C.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/CAT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/DD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/DIS.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/EK.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/GE.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/GM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/HD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/HON.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/HPQ.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/IBM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/INTC.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/IP.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/JNJ.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/JPM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/KO.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/MCD.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/MMM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/MO.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/MRK.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/MSFT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/PG.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/SBC.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/Symbols.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/T.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/UTX.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/WMT.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/XOM.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/^DJI.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/stockdata/chosen-stocks.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/kaggle.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/raw_data_process/DJI_Trend.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/raw_data_process/^DJI.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/raw_data_process/data_to_csv.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/raw_data_process/djia_trend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/data/flot-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/data/morris-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/dist/css/sb-admin-2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/dist/css/sb-admin-2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/dist/js/sb-admin-2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/dist/js/sb-admin-2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/js/sb-admin-2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/less/sb-admin-2.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/dataset/Combined_News_DJIA.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/dataset/DJIA_table.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/dataset/RedditNews.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/dataset/jquery-csv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/dataset/stock-DJI.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-plugins/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-plugins/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-plugins/dataTables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-plugins/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-responsive/dataTables.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-responsive/dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables-responsive/dataTables.responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.bootstrap4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.bootstrap4.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.foundation.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.jqueryui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.semanticui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.semanticui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.uikit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/dataTables.uikit.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/jquery.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/jquery.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/css/jquery.dataTables_themeroller.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/Sorting icons.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/images/sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.bootstrap4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.bootstrap4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.foundation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.foundation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.jqueryui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.jqueryui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.semanticui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.semanticui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.uikit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/dataTables.uikit.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/datatables/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot-tooltip/jquery.flot.tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot-tooltip/jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot-tooltip/jquery.flot.tooltip.source.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.colorhelpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.categories.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.crosshair.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.errorbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.fillbetween.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.navigate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.stack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.symbol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.threshold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.flot.time.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/flot/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/templates/include.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/templates/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../stock_prediction/templates/vendor/templates/linechart_generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/scrapy.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/items.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/pipelines.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/spiders/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ttmeiju/ttmeiju/spiders/mjspider.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/db.sqlite3" afterPath="$PROJECT_DIR$/../stock_prediction/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb_data/company.json" afterPath="$PROJECT_DIR$/../../mongodb_data/company.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/stock_prediction/settings.py" afterPath="$PROJECT_DIR$/../stock_prediction/stock_prediction/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/stock_prediction/urls.py" afterPath="$PROJECT_DIR$/../stock_prediction/stock_prediction/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/blank.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/buttons.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/forms.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/grid.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/icons.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/index.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/login.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/morris.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/morris.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/news.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/notifications.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/notifications.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/panels-wells.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/panels-wells.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/prediction.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/prediction.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/stocks.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/stocks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/tables.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/tables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/typography.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/typography.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_pool.py" afterPath="$PROJECT_DIR$/crawler_pool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poster_choice/poster_utils.py" afterPath="$PROJECT_DIR$/poster_choice/poster_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_crawler.py" afterPath="$PROJECT_DIR$/weibo_crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_utils.py" afterPath="$PROJECT_DIR$/weibo_utils.py" />
-    </list>
+    <list default="true" id="5ec7713a-3424-466e-b747-36e24951e02f" name="Default" comment="" />
     <ignored path="weibo_crawler.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -274,8 +41,8 @@
       <file leaf-file-name="weibo_utils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weibo_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.781491">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+            <state vertical-scroll-proportion="-0.2231405">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#24#72#0" expanded="true" />
               </folding>
@@ -297,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -403,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stock_prediction" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -716,18 +483,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340694" sideWeight="0.49706313" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.340694" sideWeight="0.49706313" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -756,13 +523,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poster_choice/poster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/poster_choice/poster_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,9 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,17 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,6 +734,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -967,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.781491">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+        <state vertical-scroll-proportion="-0.2231405">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#24#72#0" expanded="true" />
           </folding>
