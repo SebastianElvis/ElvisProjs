@@ -9,7 +9,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
-data = pd.read_csv('../dataset/Combined_News_DJIA.csv')
+data = pd.read_csv('../dataset/combined/Combined_News_DJIA.csv')
 
 train = data[data['Date'] < '2015-01-01']
 test = data[data['Date'] > '2014-12-31']

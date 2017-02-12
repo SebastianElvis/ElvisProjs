@@ -77,12 +77,16 @@ def stocks(request):
 
 def news(request):
     page = int(request.GET['page']) if request.GET.has_key('page') else 1  # The page theclient requests
-    num = int(request.GET['num']) if request.GET.has_key('num') else 10  # Number displayed in one page
+    num = int(request.GET['num']) if request.GET.has_key('num') else 5  # Number displayed in one page
     type = request.GET['type'] if request.GET.has_key('type') else 'all'  # Type of the record
     sort = int(request.GET['sort']) if request.GET.has_key('sort') else -1  # 1->pymongo.ASCENDING / -1->pymongo.DESCENDING
-
+    template_dict = {}
+    template_dict['page'] = page
+    template_dict['num'] = num
+    template_dict['type'] = type
+    template_dict['sort'] = sort
     t = get_template('news.html')
-    html = t.render(template.Context({'name':'elvis'}))
+    html = t.render(template.Context(template_dict))
     return HttpResponse(html)
     
 # Create your views here.

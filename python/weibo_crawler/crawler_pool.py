@@ -1,4 +1,4 @@
-from base_dao import BaseDAO
+from base_dao import *
 from weibo_crawler import WeiboCrawler
 
 
@@ -11,18 +11,17 @@ class CrawlerPool:
         urllib2.install_opener(opener)
         '''
 
-        dao = BaseDAO()
         ds = dao.find_all('data_source')
         ds.sort()
         self.pool = [WeiboCrawler(single_ds, dao) for single_ds in ds]
         i = 0
         for one in self.pool:
-            one.sleep_interval = [j*len(self.pool) for j in one.sleep_interval]
             print 'Thread ' + str(i) + ' --- ' + one.target_data_source['name']
             i += 1
 
     def start_crawl_all(self):
         for wc in self.pool:
+            wc.sleep_interval = [j*len(self.pool) for j in wc.sleep_interval]
             wc.start()
 
     def start_crawl_one(self, number):
@@ -31,4 +30,4 @@ class CrawlerPool:
 
 if __name__ == '__main__':
     cp = CrawlerPool()
-    cp.start_crawl_one(1)
+    cp.start_crawl_all()

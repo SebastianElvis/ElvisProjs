@@ -22,10 +22,10 @@ def get_file(request):
     return FileResponse(open(file_path, 'rb'))
 
 def get_records_for_one_page(request):
-    page = int(request.GET['page']) if request.GET.has_key('page') else 1  # The page theclient requests
-    num = int(request.GET['num']) if request.GET.has_key('num') else 10  # Number displayed in one page
-    type = request.GET['type'] if request.GET.has_key('type') else 'all'  # Type of the record
-    sort = int(request.GET['sort']) if request.GET.has_key('sort') else -1  # 1->pymongo.ASCENDING / -1->pymongo.DESCENDING
+    page = int(request.GET['page'])  # The page theclient requests
+    num = int(request.GET['num'])  # Number displayed in one page
+    type = request.GET['type']  # Type of the record
+    sort = int(request.GET['sort'])  # 1->pymongo.ASCENDING / -1->pymongo.DESCENDING
 
     result = dao.get_records(page=page, num=num, type=type, sort=sort)
     return HttpResponse(json.dumps(result))

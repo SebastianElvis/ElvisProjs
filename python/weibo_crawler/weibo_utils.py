@@ -18,7 +18,7 @@ def generate_header():
 
     # cookie
     cookie_str = '''
-ALF=1488782400; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0U14P9WXQBr0xN; SSOLoginState=1486192551
+_T_WM=c073d485022088878d66d69f95c9a3a2; ALF=1489387687; SCF=AjNXnaHPyKNLLFwGd6hitW1ICVVhJJs0Wy-pFrUDInZBnOT7leES7NOtCor4ccStOwcbdtVgYprp4_u98ZdX6W4.; SUB=_2A251msOxDeRxGeRN61EX9CrJyjyIHXVXZO35rDV6PUJbktBeLULEkW120Nk0Z2hnEJIhL1PCh4MJ2_C5nw..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0QSIJ0jof6Vx8P; SSOLoginState=1486795745
                  '''.strip()
     header_dict['Cookie'] = cookie_str
     header_dict['Accept-Language'] = 'zh-CN,zh;q=0.8'
@@ -28,7 +28,7 @@ ALF=1488782400; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5Jp
     header_dict['Cache-Control'] = 'max-age=0'
     header_dict['Connection'] = 'keep-alive'
     header_dict['Host'] =  'weibo.cn'
-    header_dict['Referer'] = 'weibo.cn' # r_list.get_random(referers)
+    header_dict['Referer'] = 'weibo.cn/2303644510/info' # r_list.get_random(referers)
     header_dict['Upgrade-Insecure-Requests'] = '1'
     return header_dict
 

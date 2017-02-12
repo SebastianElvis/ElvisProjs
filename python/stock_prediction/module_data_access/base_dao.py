@@ -21,8 +21,9 @@ class BaseDAO:
 
     def get_all_data_sources(self):
         r = self.find_all('data_source')
-        l = [ds['url'] for ds in r]
-        return l
+        for ds in r:
+            ds['_id'] = str(ds['_id'])
+        return r
 
     def get_all_processed_companies(self):
         companies = self.find_all('company')
@@ -32,20 +33,44 @@ class BaseDAO:
 
     def get_records(self, page=1, num=10, type='all', sort=1):
         condition_dict = {}
-        if type is not 'all':
+
+        data_sources = self.get_all_data_sources()
+        if type != 'all':
+            for single_ds in data_sources:
+                if single_ds['type'] != type:
+                    data_sources.remove(single_ds)
+        filtered_data_source_dict = {}
+        for single_ds in data_sources:
+            filtered_data_source_dict[single_ds['_id']] = single_ds
+        '''
+        if type != 'all':
             condition_dict['type'] = type
+        '''
         record_col = self.get_col('record')
-        records_cursor = record_col.find(condition_dict).sort('time', sort).limit(num).skip((page-1)*num)
+        if num == -1:
+            records_cursor = record_col.find().sort('time', sort)
+        else:
+            records_cursor = record_col.find().sort('time', sort).limit(num).skip((page-1)*num)
         records_list = []
         for s in records_cursor:
             s['_id'] = str(s['_id'])
+            if s['poster_id'] in filtered_data_source_dict:
+                s['poster'] = filtered_data_source_dict[s['poster_id']]['name']
+                s['type'] = filtered_data_source_dict[s['poster_id']]['type']
+            else:
+                continue
             records_list.append(s)
-        return records_list
+        result = dict()
+        result['records_list'] = records_list
+        result['count'] = len(result['records_list'])
+        return result
 
 
 dao = BaseDAO()
 
 if __name__ == '__main__':
     dao = BaseDAO()
-    r = dao.find_all('company')
-    print r
+    r = dao.get_records(type='all', num=-1)
+    print r['count']
+    r = dao.get_records(type='financial_news', num=-1)
+    print r['count']

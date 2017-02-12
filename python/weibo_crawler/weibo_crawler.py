@@ -7,7 +7,7 @@ import random
 import pymongo
 
 import weibo_utils
-from base_dao import BaseDAO
+from time import sleep
 
 
 class WeiboCrawler(threading.Thread):
@@ -15,7 +15,7 @@ class WeiboCrawler(threading.Thread):
         threading.Thread.__init__(self)
         self.target_data_source = target_data_source  # dict
         self.mongo_dao = mongo_dao  # MongoDAO
-        self.sleep_interval = (0, 10)
+        self.sleep_interval = (0, 20)
 
         # find the last page of the data source
         current_object_id = str(target_data_source['_id'])
@@ -35,9 +35,10 @@ class WeiboCrawler(threading.Thread):
 
     def run(self):
         print 'Start crawl thread ' + self.target_data_source['name'] + '!'
-        self.crawl(page_num=self.page_num)
+        self.crawl()
 
-    def crawl(self, url=None, page_num=1):
+    def crawl(self, url=None):
+        page_num = self.page_num
         while True:
             print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
 
@@ -64,6 +65,7 @@ class WeiboCrawler(threading.Thread):
                     print 'The response header is ' + str(resp.headers.dict)
                 else:
                     print 'Response refused --- null !'
+                    sleep(5)
                     continue
 
             # object id obj to str
@@ -79,9 +81,10 @@ class WeiboCrawler(threading.Thread):
                 continue
             else:
                 self.mongo_dao.get_col('record').insert_many(record_list)
+                print 'The records are inserted!'
 
             # crawl the next page
-            self.page_num += 1
+            page_num += 1
             print 'Finish'
             print weibo_utils.line
 

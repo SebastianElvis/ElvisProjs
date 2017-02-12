@@ -11,12 +11,12 @@ def read_stock_csv(filename):
     for line in lines:
         cells = line.split(',')
         result = []
-        result.append(cells[0])  # date
-        result.append(float(cells[1]))  # open
-        result.append(float(cells[4]))  # close
-        result.append(float(cells[3]))  # lowest
-        result.append(float(cells[2]))  # highest
-        result.append(float(cells[5]))  # volume
+        result.append(cells[0])  # date 0
+        result.append(float(cells[1]))  # open 1
+        result.append(float(cells[4]))  # close 2
+        result.append(float(cells[3]))  # lowest 3
+        result.append(float(cells[2]))  # highest 4
+        result.append(float(cells[5]))  # volume 5
         result_list.append(result)
     return result_list
 
