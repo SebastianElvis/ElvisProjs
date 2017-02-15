@@ -10,138 +10,23 @@
     <title>Stock Market Prediction System</title>
     
     {% load static %}
+    {% include "includes/css.html" %}
 
-    <link href="{% static "bootstrap/css/bootstrap.min.css " %}" rel="stylesheet">
-    <link href="{% static "metisMenu/metisMenu.min.css " %}" rel="stylesheet">
-    <link href="{% static "css/sb-admin-2.css " %}" rel="stylesheet">
-    <link href="{% static "font-awesome/css/font-awesome.min.css " %}" rel="stylesheet" type="text/css"> 
-
+    <style>
+        #line-header{
+            background: url({% static "images/line.svg " %}) no-repeat scroll 0 0 / 100% 100% transparent;
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/index">Stock Market Prediction System</a>
-            </div>
-
-            <!-- /.navbar-top-links -->
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <li>
-                            <a href="/index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/prediction"><i class="fa fa-edit fa-fw"></i> Prediction</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                        </li> -->
-                        <li>
-                            <a href="/stocks"><i class="fa fa-table fa-fw"></i> Stocks</a>
-                        </li>
-                        <li>
-                            <a href="/news"><i class="fa fa-edit fa-fw"></i> News</a>
-                        </li>
-                       <!--  <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                        </li> -->
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+        {% include "includes/nav.html" %}
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Prediction Model Status</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -151,13 +36,44 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Information today
+                            Model Parameters
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="alert alert-info" role="alert">
-                                <p>Dow Jones Industry Average(DJIA) Today: <span id="djia"></span></p>
-                            </div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Parameter</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Model ID</td>
+                                        <td>{{ nlp_obj_id }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Algorithm Used</td>
+                                        <td>{{ used_algorithm }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Penalty Function</td>
+                                        <td>{{ penalty_function }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regularization</td>
+                                        <td>{{ regularization_strength }}</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Train Date Range</td>
+                                        <td>{{ train_date_range }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Test Date Range</td>
+                                        <td>{{ test_date_range }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -167,13 +83,34 @@
                 <div class="col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Multiple Axes Line Chart Example
+                            Prediction Status
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="djia-kline"></div>
-                            </div>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td id="line-header">
+                                            Actual
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            Predicted
+                                        </td>
+                                        <td>Fall</td>
+                                        <td>Rise</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fall</td>
+                                        <td>{{ ap00 }}</td>
+                                        <td>{{ ap01 }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rise</td>
+                                        <td>{{ ap10 }}</td>
+                                        <td>{{ ap11 }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div id="pie_chart" style="width:100%;height: 200px;"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -186,14 +123,69 @@
     </div>
     <!-- /#wrapper -->
 
-    <script src="{% static "jquery/jquery.min.js " %}"></script>
-    <script src="{% static "bootstrap/js/bootstrap.min.js " %}"></script>
-    <script src="{% static "metisMenu/metisMenu.min.js " %}"></script>
-    <script src="{% static "echarts/echarts.min.js " %}"></script> 
-    <script src="{% static "js/sb-admin-2.js " %}"></script>
-    <script src="{% static "dataset/jquery-csv.min.js " %}"></script> 
-    <script src="{% static "templates/linechart_generator.js " %}"></script>
-    <script src="{% static "templates/index.js " %}"></script> 
+    {% include "includes/js.html" %}
+    <script>
+        $(document).ready(function() {
+            var pie_chart_node = document.getElementById('pie_chart');
+            var pie_chart = echarts.init(pie_chart_node);
+            var option = {
+                title: {
+                    text: 'Prediction Status',
+                    subtext: 'Correctness',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: 'left',
+                    data: ["Predict:Rise\nAcutal:Rise",
+                           "Predict:Rise\nAcutal:Fall",
+                           "Predict:Fall\nAcutal:Rise",
+                           "Predict:Fall\nAcutal:Fall"]
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        mark: {show: true},
+                        dataView: {show: true, readOnly: false},
+                        magicType: {
+                            show: true,
+                            type: ['pie', 'funnel'],
+                            option: {
+                                funnel: {
+                                    x: '25%',
+                                    width: '50%',
+                                    funnelAlign: 'left',
+                                    max: {{ test_data_sum }}
+                                }
+                            }
+                        },
+                        restore: {show: true},
+                        saveAsImage: {show: true}
+                    }
+                },
+                calculable: true,
+                series: [
+                    {
+                        name: 'Number of the day',
+                        type: 'pie',
+                        radius: '55%',
+                        center: ['50%', '60%'],
+                        data: [
+                            {value: {{ ap11 }}, name: 'Predict:Rise\nAcutal:Rise'},
+                            {value: {{ ap01 }}, name: 'Predict:Rise\nAcutal:Fall'},
+                            {value: {{ ap10 }}, name: 'Predict:Fall\nAcutal:Rise'},
+                            {value: {{ ap00 }}, name: 'Predict:Fall\nAcutal:Fall'}
+                        ]
+                    }
+                ]
+            };
+            pie_chart.setOption(option);
+        });
+    </script>
 </body>
 
 </html>

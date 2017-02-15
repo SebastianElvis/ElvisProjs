@@ -1,0 +1,479 @@
+DEBUG 2017-02-01 14:23:05,878 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:23:05,881 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:23:05,992 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:23:05,996 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:23:07,622 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:23:07,622 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:23:08,035 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:23:08,039 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:23:08,039 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:23:08,125 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:23:08,128 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:23:08,130 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:23:08,130 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:23:08,174 utils.py utils execute 89: (0.006) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'logentry' AND "django_content_type"."app_label" = 'admin'); args=('logentry', 'admin')
+DEBUG 2017-02-01 14:23:08,176 utils.py utils execute 89: (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+DEBUG 2017-02-01 14:23:08,177 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+DEBUG 2017-02-01 14:23:08,177 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'permission' AND "django_content_type"."app_label" = 'auth'); args=('permission', 'auth')
+DEBUG 2017-02-01 14:23:08,178 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'group' AND "django_content_type"."app_label" = 'auth'); args=('group', 'auth')
+DEBUG 2017-02-01 14:23:08,180 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+DEBUG 2017-02-01 14:23:08,188 utils.py utils execute 89: (0.008) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+DEBUG 2017-02-01 14:23:08,190 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+DEBUG 2017-02-01 14:23:08,191 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'contenttype' AND "django_content_type"."app_label" = 'contenttypes'); args=('contenttype', 'contenttypes')
+DEBUG 2017-02-01 14:23:08,194 utils.py utils execute 89: (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+DEBUG 2017-02-01 14:23:08,194 utils.py utils execute 89: (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+DEBUG 2017-02-01 14:23:08,196 utils.py utils execute 89: (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'session' AND "django_content_type"."app_label" = 'sessions'); args=('session', 'sessions')
+DEBUG 2017-02-01 14:23:08,197 utils.py utils execute 89: (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+DEBUG 2017-02-01 14:23:08,197 utils.py utils execute 89: (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+DEBUG 2017-02-01 14:23:23,374 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:23:23,374 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:23:23,506 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:23:23,513 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:23:25,230 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:23:25,232 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:23:25,642 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:23:25,647 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:23:25,647 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:23:25,736 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:23:25,739 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:23:30,966 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:23:39,257 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:24:08,104 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:31,680 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:25:31,680 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:25:31,812 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:25:31,821 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:25:33,635 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:25:33,635 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:25:34,029 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:25:34,033 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:25:34,033 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:25:34,128 utils.py utils execute 89: (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:25:34,130 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:25:37,650 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:38,312 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:38,703 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:39,427 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:39,690 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:39,851 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:40,017 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:45,447 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:25:46,627 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:26:02,736 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:26:02,736 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:26:02,907 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:26:02,915 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:26:04,822 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:26:04,822 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:26:05,259 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:26:05,265 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:26:05,265 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:26:05,365 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:26:05,368 utils.py utils execute 89: (0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:27:15,711 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:28:00,168 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:28:00,168 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:28:00,292 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:28:00,298 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:28:02,092 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:28:02,092 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:28:02,460 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:28:02,464 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:28:02,466 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:28:02,549 utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:28:02,552 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:28:49,121 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:28:49,121 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:28:49,249 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:28:49,253 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:28:50,903 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:28:50,903 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:28:51,285 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:28:51,289 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:28:51,289 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:28:51,375 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:28:51,378 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:28:55,473 base.py base _resolve_lookup 927: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+DEBUG 2017-02-01 14:30:05,032 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:30:05,032 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:30:05,154 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:30:05,161 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:30:06,878 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:30:06,878 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:30:07,263 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:30:07,266 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:30:07,266 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:30:07,354 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:30:07,355 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:30:32,913 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:30:32,914 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:30:33,042 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:30:33,046 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:30:34,730 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:30:34,730 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:30:35,122 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:30:35,127 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:30:35,127 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:30:35,216 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:30:35,217 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:31:10,691 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:31:10,693 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:31:10,846 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:31:10,852 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:31:12,460 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:31:12,460 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:31:12,835 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:31:12,839 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:31:12,841 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:31:12,947 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:31:12,950 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:32:12,128 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:32:12,128 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:32:12,257 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:32:12,263 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:32:14,069 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:32:14,069 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:32:14,476 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:32:14,480 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:32:14,480 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:32:25,349 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:32:25,349 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:32:25,474 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:32:25,480 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:32:27,115 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:32:27,115 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:32:27,483 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:32:27,487 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:32:27,489 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:32:27,578 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:32:27,581 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:33:13,150 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:33:13,150 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:33:13,283 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:33:13,289 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:33:15,071 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:33:15,071 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:33:15,451 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:33:15,457 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:33:15,457 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:33:15,552 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:33:15,555 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:35:54,315 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:35:54,315 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:35:54,450 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:35:54,457 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:35:56,206 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:35:56,206 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:35:56,631 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:35:56,635 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:35:56,635 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:35:56,726 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:35:56,729 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:37:45,400 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:37:45,401 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:37:45,542 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:37:45,549 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:37:47,325 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:37:47,325 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:37:47,727 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:37:47,732 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:37:47,732 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:37:47,832 utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:37:47,835 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:39:24,503 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:39:24,503 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:39:24,635 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:39:24,641 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:39:26,371 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:39:26,371 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:39:26,752 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:39:26,756 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:39:26,756 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:39:26,841 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:39:26,842 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:41:44,776 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:41:44,776 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:41:44,944 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:41:44,950 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:41:47,260 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:41:47,262 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:41:47,904 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:41:47,914 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:41:47,914 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:41:48,056 utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:41:48,059 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:42:24,664 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:42:24,664 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:42:24,801 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:42:24,805 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:42:26,454 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:42:26,456 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:42:26,821 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:42:26,825 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:42:26,825 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:42:26,911 utils.py utils execute 89: (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:42:26,913 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-01 14:43:20,934 nlp.py nlp <module> 52: Start to initialize the NLP Object
+DEBUG 2017-02-01 14:43:20,934 nlp.py nlp __init__ 12: Init NLP Object
+DEBUG 2017-02-01 14:43:21,072 nlp.py nlp __init__ 15: Read the dataset succeed!
+DEBUG 2017-02-01 14:43:21,078 nlp.py nlp __init__ 21: Start to train NLP Model
+INFO 2017-02-01 14:43:22,874 nlp.py nlp __init__ 23: Train NLP Model success!
+DEBUG 2017-02-01 14:43:22,874 nlp.py nlp __init__ 24: Start regression test
+INFO 2017-02-01 14:43:23,250 nlp.py nlp __init__ 26: Predicted   0    1
+Actual            
+0           8  178
+1          16  176
+DEBUG 2017-02-01 14:43:23,255 nlp.py nlp __init__ 27: Regression test successful
+DEBUG 2017-02-01 14:43:23,255 nlp.py nlp <module> 54: Initialize the NLP Object successfully
+DEBUG 2017-02-01 14:43:23,339 utils.py utils execute 89: (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-01 14:43:23,342 utils.py utils execute 89: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-13 16:31:15,391 nlp.py nlp <module> 88: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:31:15,392 nlp.py nlp __init__ 36: Init NLP Object
+DEBUG 2017-02-13 16:31:15,513 nlp.py nlp __init__ 41: Read the dataset succeed!
+DEBUG 2017-02-13 16:31:15,523 nlp.py nlp __init__ 50: Start to train NLP Model
+DEBUG 2017-02-13 16:31:38,119 nlp.py nlp <module> 88: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:31:38,119 nlp.py nlp __init__ 36: Init NLP Object
+DEBUG 2017-02-13 16:31:38,221 nlp.py nlp __init__ 41: Read the dataset succeed!
+DEBUG 2017-02-13 16:31:38,227 nlp.py nlp __init__ 50: Start to train NLP Model
+DEBUG 2017-02-13 16:40:09,665 nlp.py nlp <module> 98: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:40:09,665 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 16:40:09,770 nlp.py nlp __init__ 51: Read the dataset succeed!
+DEBUG 2017-02-13 16:40:09,776 nlp.py nlp __init__ 60: Start to train NLP Model
+INFO 2017-02-13 16:40:11,585 nlp.py nlp __init__ 62: Train NLP Model success!
+DEBUG 2017-02-13 16:40:11,585 nlp.py nlp __init__ 65: Start regression test
+INFO 2017-02-13 16:40:11,858 nlp.py nlp __init__ 67: Predicted   0    1
+Actual            
+0          11  143
+1          22  141
+DEBUG 2017-02-13 16:40:11,864 nlp.py nlp __init__ 68: Regression test successful
+DEBUG 2017-02-13 16:40:11,865 nlp.py nlp <module> 100: Initialize the NLP Object successfully
+DEBUG 2017-02-13 16:40:12,045 utils.py utils execute 90: (0.006) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-13 16:40:12,049 utils.py utils execute 90: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-13 16:40:38,414 nlp.py nlp <module> 98: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:40:38,415 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 16:41:06,884 nlp.py nlp <module> 98: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:41:06,884 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 16:43:02,778 nlp.py nlp <module> 101: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:43:02,778 nlp.py nlp __init__ 47: Init NLP Object
+DEBUG 2017-02-13 16:58:17,151 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:58:17,151 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 16:58:30,438 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:58:30,440 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 16:59:44,009 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 16:59:44,009 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 17:00:37,857 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 17:00:37,858 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 17:01:41,098 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 17:01:41,098 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 17:20:15,608 nlp.py nlp <module> 100: Start to initialize the NLP Object
+DEBUG 2017-02-13 17:20:15,611 nlp.py nlp __init__ 46: Init NLP Object
+DEBUG 2017-02-13 17:20:15,723 nlp.py nlp __init__ 53: Read the dataset succeed!
+DEBUG 2017-02-13 17:20:15,733 nlp.py nlp __init__ 62: Start to train NLP Model
+INFO 2017-02-13 17:20:17,641 nlp.py nlp __init__ 64: Train NLP Model success!
+DEBUG 2017-02-13 17:20:17,641 nlp.py nlp __init__ 67: Start regression test
+INFO 2017-02-13 17:20:17,930 nlp.py nlp __init__ 69: Predicted   0    1
+Actual            
+0          11  143
+1          22  141
+DEBUG 2017-02-13 17:20:17,934 nlp.py nlp __init__ 70: Regression test successful
+DEBUG 2017-02-13 17:20:17,934 nlp.py nlp <module> 102: Initialize the NLP Object successfully
+DEBUG 2017-02-13 17:20:18,092 utils.py utils execute 90: (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2017-02-13 17:20:18,095 utils.py utils execute 90: (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2017-02-13 17:20:22,220 base.py base _resolve_lookup 929: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-02-13 17:20:22,229 basehttp.py basehttp log_message 131: "GET / HTTP/1.1" 404 2685
+DEBUG 2017-02-13 17:20:22,500 base.py base _resolve_lookup 929: Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2017-02-13 17:20:22,503 basehttp.py basehttp log_message 131: "GET /favicon.ico HTTP/1.1" 404 2718
+INFO 2017-02-13 17:20:26,450 basehttp.py basehttp log_message 131: "GET /index HTTP/1.1" 301 0
+INFO 2017-02-13 17:20:26,470 basehttp.py basehttp log_message 131: "GET /index/ HTTP/1.1" 200 4975
+INFO 2017-02-13 17:20:27,487 basehttp.py basehttp log_message 131: "GET /static/font-awesome/css/font-awesome.min.css%20 HTTP/1.1" 200 29067
+INFO 2017-02-13 17:20:27,487 basehttp.py basehttp log_message 131: "GET /static/metisMenu/metisMenu.min.css%20 HTTP/1.1" 200 790
+INFO 2017-02-13 17:20:27,489 basehttp.py basehttp log_message 131: "GET /static/sb-admin/css/sb-admin-2.css%20 HTTP/1.1" 200 8854
+INFO 2017-02-13 17:20:27,490 basehttp.py basehttp log_message 131: "GET /static/bootstrap/js/bootstrap.min.js%20 HTTP/1.1" 200 37051
+INFO 2017-02-13 17:20:27,500 basehttp.py basehttp log_message 131: "GET /static/jquery/jquery.min.js%20 HTTP/1.1" 200 86355
+INFO 2017-02-13 17:20:27,510 basehttp.py basehttp log_message 131: "GET /static/sb-admin/js/sb-admin-2.js%20 HTTP/1.1" 200 1673
+INFO 2017-02-13 17:20:27,510 basehttp.py basehttp log_message 131: "GET /static/metisMenu/metisMenu.min.js%20 HTTP/1.1" 200 1887
+INFO 2017-02-13 17:20:27,515 basehttp.py basehttp log_message 131: "GET /static/main/stock_utils.js%20 HTTP/1.1" 200 114
+INFO 2017-02-13 17:20:27,517 basehttp.py basehttp log_message 131: "GET /static/main/linechart_generator.js%20 HTTP/1.1" 200 5727
+INFO 2017-02-13 17:20:27,539 basehttp.py basehttp log_message 131: "GET /static/bootstrap/css/bootstrap.min.css%20 HTTP/1.1" 200 121205
+INFO 2017-02-13 17:20:27,555 basehttp.py basehttp log_message 131: "GET /static/main/index.js%20 HTTP/1.1" 200 1204
+INFO 2017-02-13 17:20:27,608 basehttp.py basehttp log_message 131: "GET /static/echarts/echarts.min.js%20 HTTP/1.1" 200 539949
+INFO 2017-02-13 17:20:27,648 basehttp.py basehttp log_message 131: "GET /static/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+INFO 2017-02-13 17:20:28,848 basehttp.py basehttp log_message 131: "GET /getfile/?filename=DowJones_Index.json HTTP/1.1" 200 326563
+INFO 2017-02-13 17:20:32,013 basehttp.py basehttp log_message 131: "GET /prediction HTTP/1.1" 301 0
+INFO 2017-02-13 17:20:32,388 basehttp.py basehttp log_message 131: "GET /prediction/ HTTP/1.1" 200 10181
+INFO 2017-02-13 17:20:32,423 basehttp.py basehttp log_message 131: "GET /static/images/line.svg%20 HTTP/1.1" 200 374

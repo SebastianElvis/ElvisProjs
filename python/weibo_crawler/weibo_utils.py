@@ -1,15 +1,36 @@
 # -*- coding: utf-8 -*-
-import urllib2, pymongo, bs4, re, datetime, json, sys, hashlib
+import urllib2, bs4, re, datetime, json, hashlib
 from record import Record
+from random_list import RandomList
+from base_dao import BaseDAO
+import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-cookie_str = '''
-                _T_WM=eb005c7d02bf6d595bb3d6c428d22d99; gsid_CTandWM=4upp399e1JDZGUibPwrfs9Fhy8e; ALF=1482738005; SCF=Au-8Lmr7NmWTYYGK6VBbp3NX61FI963-ucAjAUhPoT-bFxb-UZbrGF7l9blggRg8V3aPEncD3KpDU1IV5Bsnbfw.; SUB=_2A251PU5hDeTxGeRN61EX9CrJyjyIHXVW3lIprDV6PUJbktAKLXbukW0KQDG7B3I_ScmdERLQzXg4q8mZHA..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0KAg41Om5Sfqw_; SSOLoginState=1480146481
-             '''
-header_dict = {"cookie": cookie_str,
-               'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/53.0.2785.143 Chrome/53.0.2785.143 Safari/537.36'}
+line = '-------------------------------------------------------'
+
+referers = BaseDAO().get_all_referers()
+
+def generate_header():
+    r_list = RandomList()
+    header_dict = {}
+
+    # cookie
+    cookie_str = '''
+_T_WM=c073d485022088878d66d69f95c9a3a2; ALF=1489387687; SCF=AjNXnaHPyKNLLFwGd6hitW1ICVVhJJs0Wy-pFrUDInZBnOT7leES7NOtCor4ccStOwcbdtVgYprp4_u98ZdX6W4.; SUB=_2A251msOxDeRxGeRN61EX9CrJyjyIHXVXZO35rDV6PUJbktBeLULEkW120Nk0Z2hnEJIhL1PCh4MJ2_C5nw..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0QSIJ0jof6Vx8P; SSOLoginState=1486795745
+                 '''.strip()
+    header_dict['Cookie'] = cookie_str
+    header_dict['Accept-Language'] = 'zh-CN,zh;q=0.8'
+    header_dict['User-Agent'] = r_list.get_random_ua()
+    header_dict['Accept'] = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    #header_dict['Accept-Encoding'] = 'gzip, deflate, sdch'
+    header_dict['Cache-Control'] = 'max-age=0'
+    header_dict['Connection'] = 'keep-alive'
+    header_dict['Host'] =  'weibo.cn'
+    header_dict['Referer'] = 'weibo.cn/2303644510/info' # r_list.get_random(referers)
+    header_dict['Upgrade-Insecure-Requests'] = '1'
+    return header_dict
 
 
 class CJsonEncoder(json.JSONEncoder):
@@ -41,14 +62,28 @@ def get_records_from_html(html, page_num, poster_id=''):
         raw_record_time = record_child_div[-1].find_all("span", recursive=False)[-1].get_text()
         time_index = raw_record_time.find(u'来自')
         raw_record_time = raw_record_time[0:(time_index - 1)]
+        print 'raw_record_time :' + raw_record_time
         if u'前' in raw_record_time or u'今天' in raw_record_time:  # 今天
             record.time = datetime.date.today()
         elif u'月' in raw_record_time and u'日' in raw_record_time:  # 今年中的某一天
-            record_time = datetime.datetime.strptime(raw_record_time, u'%m月%d日 %H:%M')
+            # datetime不支持闰年
+            if u'02月29日' in raw_record_time:
+                print '02.29 Detected !'
+                raw_record_time = raw_record_time.replace('29', '28')
+                print 'Already replaced by 02.28 !'
+            try:
+                record_time = datetime.datetime.strptime(raw_record_time , u'%m月%d日 %H:%M')
+            except:
+                print 'Strptime Error this year ! ---- raw_record_time is: ', raw_record_time
+                return
             record_time = record_time.replace(year=2016)
             record.time = record_time.date()
         else:  # 前面的年份
-            record_time = datetime.datetime.strptime(raw_record_time, '%Y-%m-%d %H:%M:%S')
+            try:
+                record_time = datetime.datetime.strptime(raw_record_time, '%Y-%m-%d %H:%M:%S')
+            except:
+                print 'Strptime Error previous year ! ---- raw_record_time is: ', raw_record_time
+                return
             record.time = record_time.date()
         record.time = str(record.time)
         record.hash = hashlib.sha1(str(record)).hexdigest()
@@ -58,8 +93,16 @@ def get_records_from_html(html, page_num, poster_id=''):
     return record_list
 
 
+class RedirctHandler(urllib2.HTTPRedirectHandler):
+    """docstring for RedirctHandler"""
+    def http_error_301(self, req, fp, code, msg, headers):
+        pass
+    
+    def http_error_302(self, req, fp, code, msg, headers):
+        pass
+
 if __name__ == '__main__':
     url = 'http://weibo.cn/importnew?page=200'
-    req = urllib2.Request(url, headers=header_dict)
+    req = urllib2.Request(url, headers=generate_header())
     r = urllib2.urlopen(req)
     print get_records_from_html(r.read())
