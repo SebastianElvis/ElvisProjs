@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ec7713a-3424-466e-b747-36e24951e02f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poster_choice/poster_choser.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../news_crawler/enterprise_entity.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb_data/data_source.json" afterPath="$PROJECT_DIR$/../../mongodb_data/data_source.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../mongodb_data/record.json" afterPath="$PROJECT_DIR$/../../mongodb_data/record.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/.idea/misc.xml" afterPath="$PROJECT_DIR$/../stock_prediction/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/.idea/stock_prediction.iml" afterPath="$PROJECT_DIR$/../stock_prediction/.idea/stock_prediction.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../stock_prediction/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/module_data_access/base_dao.py" afterPath="$PROJECT_DIR$/../stock_prediction/module_data_access/base_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/module_data_access/views.py" afterPath="$PROJECT_DIR$/../stock_prediction/module_data_access/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/module_prediction/views.py" afterPath="$PROJECT_DIR$/../stock_prediction/module_prediction/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/my_module_raw_data_process/stock_csv_to_json.py" afterPath="$PROJECT_DIR$/../stock_prediction/my_module_raw_data_process/stock_csv_to_json.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/templates/pages/news.html" afterPath="$PROJECT_DIR$/../stock_prediction/templates/pages/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/test/kaggle.py" afterPath="$PROJECT_DIR$/../stock_prediction/test/kaggle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_BABA.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_BABA.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_BIDU.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_BIDU.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHA.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHA.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHL.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHL.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHU.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_CHU.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_JMEI.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_JMEI.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_NTES.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_NTES.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_SINA.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_SINA.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_SOHU.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_SOHU.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_TCTZF.csv" afterPath="$PROJECT_DIR$/../stock_prediction/dataset/combined/Combined_News_TCTZF.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/log/django.log" afterPath="$PROJECT_DIR$/../stock_prediction/log/django.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/module_prediction/nlp.py" afterPath="$PROJECT_DIR$/../stock_prediction/module_prediction/nlp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stock_prediction/my_module_raw_data_process/generate_combined.py" afterPath="$PROJECT_DIR$/../stock_prediction/my_module_raw_data_process/generate_combined.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/weibo_crawler.iml" afterPath="$PROJECT_DIR$/.idea/weibo_crawler.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_dao.py" afterPath="$PROJECT_DIR$/base_dao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crawler_pool.py" afterPath="$PROJECT_DIR$/crawler_pool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poster_choice/poster.py" afterPath="$PROJECT_DIR$/poster_choice/poster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/poster_choice/poster_utils.py" afterPath="$PROJECT_DIR$/poster_choice/poster_utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_crawler.py" afterPath="$PROJECT_DIR$/weibo_crawler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_utils.py" afterPath="$PROJECT_DIR$/weibo_utils.py" />
     </list>
@@ -30,7 +39,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/weibo_crawler$crawler_pool.coverage" NAME="crawler_pool Coverage Results" MODIFIED="1486795787225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/weibo_crawler$crawler_pool.coverage" NAME="crawler_pool Coverage Results" MODIFIED="1487295780994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_crawler$weibo_crawler.coverage" NAME="weibo_crawler Coverage Results" MODIFIED="1485829666443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_crawler$base_dao.coverage" NAME="base_dao Coverage Results" MODIFIED="1484965520827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/weibo_crawler$poster_utils.coverage" NAME="poster_utils Coverage Results" MODIFIED="1486795252603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/poster_choice" />
@@ -48,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/weibo_utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
               <folding>
                 <element signature="e#24#72#0" expanded="true" />
               </folding>
@@ -56,14 +65,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="poster_choser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="poster_choser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/poster_choice/poster_choser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2886076">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crawler_pool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler_pool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weibo_crawler.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weibo_crawler.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weibo_crawler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.997183">
+              <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/poster_choice/poster_utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#16#44#0" expanded="true" />
               </folding>
@@ -99,10 +140,10 @@
         <option value="$PROJECT_DIR$/poster_choice/poster_choser.py" />
         <option value="$PROJECT_DIR$/base_dao.py" />
         <option value="$PROJECT_DIR$/poster_choice/poster.py" />
-        <option value="$PROJECT_DIR$/weibo_crawler.py" />
         <option value="$PROJECT_DIR$/crawler_pool.py" />
         <option value="$PROJECT_DIR$/poster_choice/poster_utils.py" />
         <option value="$PROJECT_DIR$/weibo_utils.py" />
+        <option value="$PROJECT_DIR$/weibo_crawler.py" />
       </list>
     </option>
   </component>
@@ -142,8 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -178,12 +217,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stock_prediction" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -486,15 +529,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20644216" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20424597" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50293684" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33123028" sideWeight="0.49706313" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39432177" sideWeight="0.49706313" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -540,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,68 +911,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/random_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2626262">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_crawler.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base_dao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/poster_choice/poster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.82608694">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_utils.py">
+    <entry file="file://$PROJECT_DIR$/random_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawler_pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48101267">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3835616">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-1.9436619">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/poster_choice/poster_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#16#44#0" expanded="true" />
           </folding>
@@ -948,11 +944,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/poster_choice/poster_choser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2886076">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_crawler.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+          <folding>
+            <element signature="e#24#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.997183">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

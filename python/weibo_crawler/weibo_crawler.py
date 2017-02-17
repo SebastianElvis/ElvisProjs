@@ -17,6 +17,9 @@ class WeiboCrawler(threading.Thread):
         self.mongo_dao = mongo_dao  # MongoDAO
         self.sleep_interval = (0, 20)
 
+        # counter of the failed requests
+        self.failed_count = 0
+
         # find the last page of the data source
         current_object_id = str(target_data_source['_id'])
         ds_tmp_query = mongo_dao.get_col('record')\
@@ -39,7 +42,7 @@ class WeiboCrawler(threading.Thread):
 
     def crawl(self, url=None):
         page_num = self.page_num
-        while True:
+        while self.failed_count < 5:
             print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
 
             # url
@@ -58,15 +61,17 @@ class WeiboCrawler(threading.Thread):
                 resp = urllib2.urlopen(req, timeout=5)
                 html = resp.read()
             except:
-                print  'Exception detected when crawling page ' + str(page_num)
+                print 'Exception detected when crawling page ' + str(page_num)
                 print 'The request header is ' + str(req.headers)
                 if resp is not None:
                     print 'The response code is ' + str(resp.getcode())
                     print 'The response header is ' + str(resp.headers.dict)
                 else:
                     print 'Response refused --- null !'
-                    sleep(5)
-                    continue
+
+                self.failed_count += 1
+                sleep(5)
+                continue
 
             # object id obj to str
             object_id_str = str(self.target_data_source['_id'])
@@ -78,10 +83,14 @@ class WeiboCrawler(threading.Thread):
                 print 'Crawl error!'
                 print 'The request header is ' + str(req.headers)
                 print 'Login required!'
+                self.failed_count += 1
                 continue
             else:
                 self.mongo_dao.get_col('record').insert_many(record_list)
                 print 'The records are inserted!'
+
+            # clear the failed count
+            self.failed_count = 0
 
             # crawl the next page
             page_num += 1
@@ -91,3 +100,6 @@ class WeiboCrawler(threading.Thread):
             # sleep for some seconds to fight against the Anti-Spider System
             time.sleep(random.uniform(self.sleep_interval[0],
                                       self.sleep_interval[1]))
+
+        if self.failed_count >= 5:
+            print 'Failed too many times, crawler of %s exiting...' % self.target_data_source['name']

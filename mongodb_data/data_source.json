@@ -1,144 +1,24 @@
-{
-	"_id" : ObjectId("5839089dfb8006bc195b6a22"),
-	"name" : "新浪财经",
-	"url" : "http://weibo.cn/u/1638782947",
-	"type" : "financial_news"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258ccb"),
-	"url" : "http://weibo.cn/91wyq",
-	"type" : "financial_news",
-	"name" : "微舆情"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258ccc"),
-	"url" : "http://weibo.cn/u/1642585887",
-	"type" : "financial_news",
-	"name" : "新浪证劵"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258ccd"),
-	"url" : "http://weibo.cn/chinabloomberg",
-	"type" : "financial_news",
-	"name" : "彭博Bloomberg"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cce"),
-	"url" : "http://weibo.cn/gtjazq",
-	"type" : "financial_news",
-	"name" : "国泰君安证劵"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258ccf"),
-	"url" : "http://weibo.cn/dmonsns",
-	"type" : "financial_news",
-	"name" : "社会网络与数据挖掘"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd0"),
-	"url" : "http://weibo.cn/wallstreetcn",
-	"type" : "financial_news",
-	"name" : "华尔街见闻APP"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd1"),
-	"url" : "http://weibo.cn/horatiothesecond",
-	"type" : "financial_news",
-	"name" : "傅峙峰WSJ"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd2"),
-	"url" : "http://weibo.cn/u/1638782947",
-	"type" : "financial_news",
-	"name" : "新浪财经"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd3"),
-	"url" : "http://weibo.cn/economistgroup",
-	"type" : "financial_news",
-	"name" : "经济学人集团"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd4"),
-	"url" : "http://weibo.cn/u/2655343743",
-	"type" : "financial_news",
-	"name" : "美股动态"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd5"),
-	"url" : "http://weibo.cn/u/5578381471",
-	"type" : "financial_news",
-	"name" : "微博股票"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd6"),
-	"url" : "http://weibo.cn/usstockroll",
-	"type" : "financial_news",
-	"name" : "环球市场播报"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd7"),
-	"url" : "http://weibo.cn/stock163",
-	"type" : "financial_news",
-	"name" : "网易股票"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd8"),
-	"url" : "http://weibo.cn/pedaily",
-	"type" : "financial_news",
-	"name" : "投资界微博"
-},
-{
-	"_id" : ObjectId("58390d42d968731af6258cd9"),
-	"url" : "http://weibo.cn/u/5947075621",
-	"type" : "financial_news",
-	"name" : "见闻美股"
-},
-{
-	"_id" : ObjectId("58390df0fb8006bc195b6a29"),
-	"name" : "TechWeb",
-	"url" : "http://weibo.cn/techweb",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("58390e08fb8006bc195b6a2a"),
-	"name" : "GeekPark",
-	"url" : "http://weibo.cn/geekpark",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("58390e1bfb8006bc195b6a2b"),
-	"name" : "粉丝头条官方微博",
-	"url" : "http://weibo.cn/u/3587960280",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("58390e33fb8006bc195b6a2c"),
-	"name" : "36氪",
-	"url" : "http://weibo.cn/wow36kr",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("583938dcfb8006bc195b6a46"),
-	"name" : "创业邦杂志",
-	"url" : "http://weibo.cn/cyzone",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("583938f3fb8006bc195b6a47"),
-	"name" : "IT之家",
-	"url" : "http://weibo.cn/ithome",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("58393991fb8006bc195b6a48"),
-	"name" : "凤凰科技",
-	"url" : "http://weibo.cn/ifengtechdigi",
-	"type" : "tech_news"
-},
-{
-	"_id" : ObjectId("58393a1ffb8006bc195b6a4e"),
-	"name" : "新浪科技",
-	"url" : "http://weibo.cn/sinatech",
-	"type" : "tech_news"
-},
+{"_id":{"$oid":"5839089dfb8006bc195b6a22"},"name":"新浪财经","type":"financial_news","url":"http://weibo.cn/u/1638782947"}
+{"_id":{"$oid":"58390d42d968731af6258ccb"},"name":"微舆情","type":"financial_news","url":"http://weibo.cn/91wyq"}
+{"_id":{"$oid":"58390d42d968731af6258ccc"},"name":"新浪证劵","type":"financial_news","url":"http://weibo.cn/u/1642585887"}
+{"_id":{"$oid":"58390d42d968731af6258ccd"},"name":"彭博Bloomberg","type":"financial_news","url":"http://weibo.cn/chinabloomberg"}
+{"_id":{"$oid":"58390d42d968731af6258cce"},"name":"国泰君安证劵","type":"financial_news","url":"http://weibo.cn/gtjazq"}
+{"_id":{"$oid":"58390d42d968731af6258ccf"},"name":"社会网络与数据挖掘","type":"financial_news","url":"http://weibo.cn/dmonsns"}
+{"_id":{"$oid":"58390d42d968731af6258cd0"},"name":"华尔街见闻APP","type":"financial_news","url":"http://weibo.cn/wallstreetcn"}
+{"_id":{"$oid":"58390d42d968731af6258cd1"},"name":"傅峙峰WSJ","type":"financial_news","url":"http://weibo.cn/horatiothesecond"}
+{"_id":{"$oid":"58390d42d968731af6258cd2"},"name":"新浪财经","type":"financial_news","url":"http://weibo.cn/u/1638782947"}
+{"_id":{"$oid":"58390d42d968731af6258cd3"},"name":"经济学人集团","type":"financial_news","url":"http://weibo.cn/economistgroup"}
+{"_id":{"$oid":"58390d42d968731af6258cd4"},"name":"美股动态","type":"financial_news","url":"http://weibo.cn/u/2655343743"}
+{"_id":{"$oid":"58390d42d968731af6258cd5"},"name":"微博股票","type":"financial_news","url":"http://weibo.cn/u/5578381471"}
+{"_id":{"$oid":"58390d42d968731af6258cd6"},"name":"环球市场播报","type":"financial_news","url":"http://weibo.cn/usstockroll"}
+{"_id":{"$oid":"58390d42d968731af6258cd7"},"name":"网易股票","type":"financial_news","url":"http://weibo.cn/stock163"}
+{"_id":{"$oid":"58390d42d968731af6258cd8"},"name":"投资界微博","type":"financial_news","url":"http://weibo.cn/pedaily"}
+{"_id":{"$oid":"58390d42d968731af6258cd9"},"name":"见闻美股","type":"financial_news","url":"http://weibo.cn/u/5947075621"}
+{"_id":{"$oid":"58390df0fb8006bc195b6a29"},"name":"TechWeb","type":"tech_news","url":"http://weibo.cn/techweb"}
+{"_id":{"$oid":"58390e08fb8006bc195b6a2a"},"name":"GeekPark","type":"tech_news","url":"http://weibo.cn/geekpark"}
+{"_id":{"$oid":"58390e1bfb8006bc195b6a2b"},"name":"粉丝头条官方微博","type":"tech_news","url":"http://weibo.cn/u/3587960280"}
+{"_id":{"$oid":"58390e33fb8006bc195b6a2c"},"name":"36氪","type":"tech_news","url":"http://weibo.cn/wow36kr"}
+{"_id":{"$oid":"583938dcfb8006bc195b6a46"},"name":"创业邦杂志","type":"tech_news","url":"http://weibo.cn/cyzone"}
+{"_id":{"$oid":"583938f3fb8006bc195b6a47"},"name":"IT之家","type":"tech_news","url":"http://weibo.cn/ithome"}
+{"_id":{"$oid":"58393991fb8006bc195b6a48"},"name":"凤凰科技","type":"tech_news","url":"http://weibo.cn/ifengtechdigi"}
+{"_id":{"$oid":"58393a1ffb8006bc195b6a4e"},"name":"新浪科技","type":"tech_news","url":"http://weibo.cn/sinatech"}

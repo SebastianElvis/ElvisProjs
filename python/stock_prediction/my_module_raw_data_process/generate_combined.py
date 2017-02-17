@@ -11,6 +11,7 @@ def generate_combined_csv(filename):
     trend_dict = trend_csv_to_dict(filename)
     news_file = open(news_dir + 'financial_news.csv', 'r')
     combined_file = open(combined_dir + 'Combined_News_' + filename.split('.')[0] + '.csv', 'w+')
+    combined_file.write("Date,Label,News\n")
     for news_line in news_file.readlines():
         splitted_news_lines = news_line.split(',')
         if splitted_news_lines[0] is not None \
@@ -19,7 +20,7 @@ def generate_combined_csv(filename):
             print 'Date %s found in trend_dict !' % splitted_news_lines[0]
             combined_line = splitted_news_lines[0] + ',' \
                             + str(trend_dict[splitted_news_lines[0]]) + ','\
-                            + ','.join(splitted_news_lines[1:-1]) + '\n'
+                            + ' '.join(splitted_news_lines[1:-1]) + '\n'
             combined_file.write(combined_line)
         else:
             continue
@@ -29,6 +30,7 @@ def generate_combined_csv(filename):
     print utils.line
 
 if __name__ == '__main__':
+    # companies = ['BABA', 'BIDU', 'CHA', 'CHL', 'CHU', 'DJIA', 'JMEI', 'NTES', 'SINA', 'SOHU', 'TCTZF']
     company_list = dao.get_all_processed_companies()
     for company in company_list:
         generate_combined_csv(company['code'])

@@ -12,13 +12,14 @@ line = '-------------------------------------------------------'
 
 referers = BaseDAO().get_all_referers()
 
+
 def generate_header():
     r_list = RandomList()
     header_dict = {}
 
     # cookie
     cookie_str = '''
-_T_WM=c073d485022088878d66d69f95c9a3a2; ALF=1489387687; SCF=AjNXnaHPyKNLLFwGd6hitW1ICVVhJJs0Wy-pFrUDInZBnOT7leES7NOtCor4ccStOwcbdtVgYprp4_u98ZdX6W4.; SUB=_2A251msOxDeRxGeRN61EX9CrJyjyIHXVXZO35rDV6PUJbktBeLULEkW120Nk0Z2hnEJIhL1PCh4MJ2_C5nw..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0QSIJ0jof6Vx8P; SSOLoginState=1486795745
+_T_WM=05cc869bb2fca61fcd71553a8d18331e; ALF=1489832056; SCF=AsAX-nl6za_tqmlP7Wc4KZBfnM5lvn6m2-lc1hztSI7k5yDhHYEs74LtXw3_XszehtkW2JVeKDv235bd8Sqh6nU.; SUB=_2A251oQsuDeRxGeRN61EX9CrJyjyIHXVXbZVmrDV6PUJbktBeLVnEkW1NveA1EY7_Cfq_lvDrfzCXECY2Hg..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh3LNHVkce-0__UlEggblno5JpX5o2p5NHD95QEe050SoBXSK27Ws4Dqcj.i--4iKLsi-24i--4iKLsi-24i--ci-zci-2ci--Ri-zciKnf; SUHB=0N2EF4D-dx1jDu; SSOLoginState=1487240062
                  '''.strip()
     header_dict['Cookie'] = cookie_str
     header_dict['Accept-Language'] = 'zh-CN,zh;q=0.8'
@@ -76,7 +77,7 @@ def get_records_from_html(html, page_num, poster_id=''):
             except:
                 print 'Strptime Error this year ! ---- raw_record_time is: ', raw_record_time
                 return
-            record_time = record_time.replace(year=2016)
+            record_time = record_time.replace(year=2017)
             record.time = record_time.date()
         else:  # 前面的年份
             try:
