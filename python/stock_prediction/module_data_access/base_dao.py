@@ -62,7 +62,7 @@ class BaseDAO:
             records_list.append(s)
         result = dict()
         result['records_list'] = records_list
-        result['count'] = len(result['records_list'])
+        result['count'] = record_col.count()
         return result
 
 

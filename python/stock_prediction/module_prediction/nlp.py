@@ -58,7 +58,7 @@ class NLP:
         #print os.listdir('../dataset/combined/'.decode('utf-8'))
 
         # initialize the dataset
-        self.djia_news_csv_dir = 'dataset/combined/Combined_News_DJIA.csv'
+        self.djia_news_csv_dir = '../dataset/combined/Combined_News_DJIA.csv'
         self.dataset = pd.read_csv(self.djia_news_csv_dir)
         logger.debug('Read the dataset succeed!')
         self.train_dataset, self.test_dataset = NLP.divide_train_test(self.dataset, '2016-02-01')
