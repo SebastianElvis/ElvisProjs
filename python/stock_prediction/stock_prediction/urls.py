@@ -27,4 +27,6 @@ urlpatterns = [
     url(r'^companies/$', get_all_companies),
     url(r'^getfile/$', get_file),
     url(r'^getrecords/$', get_records_for_one_page),
+    url(r'^about/$', about),
+    url(r'^contact/$', contact),
 ]

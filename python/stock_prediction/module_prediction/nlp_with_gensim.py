@@ -1,7 +1,7 @@
 import gensim
 import pandas as pd
 from nlp import NLP
-from math import isnan
+from dataset_utils import *
 import jieba
 
 combined_dir = '../dataset/combined/'
@@ -10,8 +10,7 @@ assembled_combined_csv = pd.read_csv(combined_dir + 'assembled_combined.csv', qu
 train_dataset, test_dataset = NLP.divide_train_test(assembled_combined_csv, '2016-02-01')
 
 # date and label list
-date_list = train_dataset.iloc[0:, 0]  # return pandas.core.series.Series
-documents = test_dataset.iloc[0:, 12:]  # get the value by documents.values(a 2-dimentional array)
+
 
 
 
@@ -40,11 +39,12 @@ class NLPWithGensim:
 
 
 if __name__ == '__main__':
+    documents = derive_components_from_dataset(train_dataset)[2]
     corpus_tfidf, dic = NLPWithGensim.documents_to_tfidf_corpus(documents)
-    '''
+
     lda = gensim.models.LdaModel(corpus_tfidf, num_topics=10, id2word=dic)
     corpus_lda = lda[corpus_tfidf]
     print 'Print topics...'
     for i in range(10):
         print lda.print_topic(i)
-    '''
+

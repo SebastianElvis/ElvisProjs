@@ -88,5 +88,15 @@ def news(request):
     t = get_template('news.html')
     html = t.render(template.Context(template_dict))
     return HttpResponse(html)
-    
-# Create your views here.
+
+
+def about(request):
+    t = get_template('about.html')
+    html = t.render(template.Context({}))
+    return HttpResponse(html)
+
+
+def contact(request):
+    t = get_template('contact.html')
+    html = t.render(template.Context({}))
+    return HttpResponse(html)
