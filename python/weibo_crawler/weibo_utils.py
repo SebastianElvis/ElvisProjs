@@ -4,6 +4,7 @@ from record import Record
 from random_list import RandomList
 from base_dao import BaseDAO
 import sys
+from crawler_logger import *
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -78,20 +79,20 @@ def get_records_from_html(html, page_num, poster_id=''):
         raw_record_time = record_child_div[-1].find_all("span", "ct", recursive=False)[-1].get_text()
         time_index = raw_record_time.find(u'来自')
         raw_record_time = raw_record_time[0:(time_index - 1)]
-        print 'raw_record_time :' + raw_record_time,
+        logger.info('raw_record_time :' + str(raw_record_time))
 
         if u'前' in raw_record_time or u'今天' in raw_record_time:  # 今天
             record.time = datetime.date.today()
         elif u'月' in raw_record_time and u'日' in raw_record_time:  # 今年中的某一天
             # datetime不支持闰年
             if u'02月29日' in raw_record_time:
-                print '02.29 Detected !'
+                logger.debug('02.29 Detected !')
                 raw_record_time = raw_record_time.replace('29', '28')
-                print 'Already replaced by 02.28 !'
+                logger.info('Already replaced by 02.28 !')
             try:
                 record_time = datetime.datetime.strptime(raw_record_time , u'%m月%d日 %H:%M')
             except:
-                print 'Strptime Error this year ! ---- raw_record_time is: ', raw_record_time
+                logger.error('Strptime Error this year ! ---- raw_record_time is: '+ str(raw_record_time))
                 return
             record_time = record_time.replace(year=2017)
             record.time = record_time.date()
@@ -99,14 +100,14 @@ def get_records_from_html(html, page_num, poster_id=''):
             try:
                 record_time = datetime.datetime.strptime(raw_record_time, '%Y-%m-%d %H:%M:%S')
             except:
-                print 'Strptime Error previous year ! ---- raw_record_time is: ', raw_record_time
+                logger.error('Strptime Error previous year ! ---- raw_record_time is: '+ str(raw_record_time))
                 return
             record.time = record_time.date()
         record.time = str(record.time)
-        record.hash = hashlib.sha1(str(record)).hexdigest()
+        record.hash = hashlib.sha1(str(record.content)).hexdigest()
         record.page_num = page_num
 
-        print record.__dict__
+        logger.info(str(record.__dict__))
         record_list.append(record.__dict__)
 
     return record_list

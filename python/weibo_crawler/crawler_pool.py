@@ -1,3 +1,5 @@
+# coding:utf-8
+
 from base_dao import *
 from weibo_crawler import WeiboCrawler
 

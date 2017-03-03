@@ -1,9 +1,11 @@
+# coding:utf-8
+
 import threading
 import urllib
 import urllib2
 import time
 import random
-
+from crawler_logger import logger
 import pymongo
 
 import weibo_utils
@@ -37,13 +39,13 @@ class WeiboCrawler(threading.Thread):
                 self.page_num = page_num
 
     def run(self):
-        print 'Start crawl thread ' + self.target_data_source['name'] + '!'
+        logger.info('Start crawl thread ' + self.target_data_source['name'] + '!')
         self.crawl()
 
     def crawl(self, url=None):
         page_num = self.page_num
         while self.failed_count < 5:
-            print 'Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num)
+            logger.info('Start crawling ' + self.target_data_source['name'] + ' page ' + str(page_num))
 
             # url
             if url is None:
@@ -61,13 +63,13 @@ class WeiboCrawler(threading.Thread):
                 resp = urllib2.urlopen(req, timeout=5)
                 html = resp.read()
             except:
-                print 'Exception detected when crawling page ' + str(page_num)
-                print 'The request header is ' + str(req.headers)
+                logger.error('Exception detected when crawling page ' + str(page_num))
+                logger.error('The request header is ' + str(req.headers))
                 if resp is not None:
-                    print 'The response code is ' + str(resp.getcode())
-                    print 'The response header is ' + str(resp.headers.dict)
+                    logger.error('The response code is ' + str(resp.getcode()))
+                    logger.error('The response header is ' + str(resp.headers.dict))
                 else:
-                    print 'Response refused --- null !'
+                    logger.error('Response refused --- null !')
 
                 self.failed_count += 1
                 sleep(5)
@@ -80,26 +82,24 @@ class WeiboCrawler(threading.Thread):
 
             # insert the records into the weibo database -> record collection
             if record_list is None or len(record_list) == 0:
-                print 'Crawl error!'
-                print 'The request header is ' + str(req.headers)
-                print 'Login required!'
+                logger.error('Crawl error!')
+                logger.error('The request header is ' + str(req.headers))
+                logger.error('Login required!')
                 self.failed_count += 1
                 continue
             else:
                 self.mongo_dao.get_col('record').insert_many(record_list)
-                print 'The records are inserted!'
+                logger.info('The records are inserted!')
 
             # clear the failed count
             self.failed_count = 0
 
             # crawl the next page
             page_num += 1
-            print 'Finish'
-            print weibo_utils.line
-
+            logger.info('Finish')
             # sleep for some seconds to fight against the Anti-Spider System
             time.sleep(random.uniform(self.sleep_interval[0],
                                       self.sleep_interval[1]))
 
         if self.failed_count >= 5:
-            print 'Failed too many times, crawler of %s exiting...' % self.target_data_source['name']
+            logger.fatal('Failed too many times, crawler of %s exiting...' % self.target_data_source['name'])
