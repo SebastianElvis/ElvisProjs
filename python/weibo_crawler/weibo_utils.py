@@ -107,8 +107,9 @@ def get_records_from_html(html, page_num, poster_id=''):
         record.hash = hashlib.sha1(str(record.content)).hexdigest()
         record.page_num = page_num
 
-        logger.info(str(record.__dict__))
         record_list.append(record.__dict__)
+        logger.info(str(record.__dict__))
+
 
     return record_list
 
