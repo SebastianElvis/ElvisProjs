@@ -179,7 +179,7 @@ trainerD = tf.train.GradientDescentOptimizer(0.01).minimize(d_loss, var_list=d_v
 trainerG = tf.train.GradientDescentOptimizer(0.01).minimize(g_loss, var_list=g_vars)
 
 sess.run(tf.global_variables_initializer())
-iterations = 2000
+iterations = 30000
 
 print('Start training...')
 for i in range(iterations):

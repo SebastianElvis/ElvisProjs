@@ -1,0 +1,450 @@
+599/600 [============================>.] - ETA: 0s   
+Testing for epoch 1:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 3.21 | 1.82            | 1.39 
+generator (test)       | 1.55 | 1.27            | 0.28 
+discriminator (train)  | 1.65 | 0.56            | 1.09 
+discriminator (test)   | 0.75 | 0.37            | 0.38 
+Epoch 2 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 2:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 1.71 | 1.56            | 0.15 
+generator (test)       | 1.72 | 1.56            | 0.16 
+discriminator (train)  | 0.84 | 0.57            | 0.28 
+discriminator (test)   | 0.65 | 0.45            | 0.21 
+Epoch 3 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 3:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 1.18 | 1.14            | 0.04 
+generator (test)       | 0.95 | 0.94            | 0.00 
+discriminator (train)  | 0.75 | 0.62            | 0.13 
+discriminator (test)   | 0.57 | 0.50            | 0.07 
+Epoch 4 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 4:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 1.06 | 1.03            | 0.02 
+generator (test)       | 0.99 | 0.99            | 0.00 
+discriminator (train)  | 0.73 | 0.63            | 0.10 
+discriminator (test)   | 0.64 | 0.59            | 0.05 
+Epoch 5 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 5:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.99 | 0.97            | 0.02 
+generator (test)       | 0.84 | 0.83            | 0.00 
+discriminator (train)  | 0.71 | 0.64            | 0.07 
+discriminator (test)   | 0.65 | 0.61            | 0.04 
+Epoch 6 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 6:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.87 | 0.86            | 0.01 
+generator (test)       | 0.70 | 0.70            | 0.00 
+discriminator (train)  | 0.74 | 0.67            | 0.06 
+discriminator (test)   | 0.74 | 0.70            | 0.03 
+Epoch 7 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 7:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.84 | 0.83            | 0.01 
+generator (test)       | 0.68 | 0.68            | 0.00 
+discriminator (train)  | 0.73 | 0.67            | 0.06 
+discriminator (test)   | 0.75 | 0.72            | 0.03 
+Epoch 8 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 8:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.81 | 0.80            | 0.01 
+generator (test)       | 0.70 | 0.69            | 0.01 
+discriminator (train)  | 0.74 | 0.69            | 0.05 
+discriminator (test)   | 0.75 | 0.72            | 0.03 
+Epoch 9 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 9:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.79 | 0.78            | 0.01 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.04 
+discriminator (test)   | 0.71 | 0.68            | 0.03 
+Epoch 10 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 10:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.77 | 0.77            | 0.01 
+generator (test)       | 0.77 | 0.76            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.04 
+discriminator (test)   | 0.72 | 0.69            | 0.02 
+Epoch 11 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 11:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.76 | 0.76            | 0.01 
+generator (test)       | 0.70 | 0.70            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.04 
+discriminator (test)   | 0.74 | 0.71            | 0.02 
+Epoch 12 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 12:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.76 | 0.75            | 0.00 
+generator (test)       | 0.67 | 0.67            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.03 
+discriminator (test)   | 0.72 | 0.70            | 0.02 
+Epoch 13 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 13:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.76 | 0.75            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.03 
+discriminator (test)   | 0.74 | 0.72            | 0.02 
+Epoch 14 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 14:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.75 | 0.75            | 0.00 
+generator (test)       | 0.74 | 0.74            | 0.00 
+discriminator (train)  | 0.73 | 0.69            | 0.03 
+discriminator (test)   | 0.74 | 0.72            | 0.02 
+Epoch 15 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 15:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.75 | 0.74            | 0.00 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.73 | 0.70            | 0.03 
+discriminator (test)   | 0.74 | 0.72            | 0.02 
+Epoch 16 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 16:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.74            | 0.00 
+generator (test)       | 0.75 | 0.74            | 0.00 
+discriminator (train)  | 0.73 | 0.70            | 0.03 
+discriminator (test)   | 0.74 | 0.72            | 0.02 
+Epoch 17 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 17:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.75 | 0.74            | 0.00 
+generator (test)       | 0.72 | 0.72            | 0.00 
+discriminator (train)  | 0.72 | 0.70            | 0.03 
+discriminator (test)   | 0.71 | 0.69            | 0.02 
+Epoch 18 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 18:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.74            | 0.00 
+generator (test)       | 0.72 | 0.72            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.03 
+discriminator (test)   | 0.71 | 0.69            | 0.02 
+Epoch 19 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 19:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.72 | 0.70            | 0.03 
+discriminator (test)   | 0.72 | 0.71            | 0.02 
+Epoch 20 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 20:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.72 | 0.70            | 0.03 
+discriminator (test)   | 0.74 | 0.73            | 0.02 
+Epoch 21 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 21:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.70            | 0.01 
+Epoch 22 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 22:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.72 | 0.70            | 0.02 
+discriminator (test)   | 0.72 | 0.70            | 0.01 
+Epoch 23 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 23:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.74            | 0.00 
+generator (test)       | 0.64 | 0.63            | 0.01 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.75 | 0.74            | 0.02 
+Epoch 24 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 24:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.71 | 0.71            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.70 | 0.68            | 0.01 
+Epoch 25 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 25:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.68 | 0.68            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.73 | 0.71            | 0.01 
+Epoch 26 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 26:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.70            | 0.01 
+Epoch 27 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 27:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.72 | 0.69            | 0.02 
+discriminator (test)   | 0.73 | 0.72            | 0.01 
+Epoch 28 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 28:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.77 | 0.77            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.74 | 0.72            | 0.01 
+Epoch 29 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 29:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.64 | 0.64            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.74 | 0.72            | 0.01 
+Epoch 30 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 30:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.74 | 0.73            | 0.01 
+Epoch 31 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 31:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.81 | 0.81            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 32 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 32:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 33 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 33:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.74 | 0.74            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 34 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 34:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.69 | 0.69            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.74 | 0.73            | 0.01 
+Epoch 35 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 35:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.71 | 0.71            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.69            | 0.01 
+Epoch 36 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 36:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.76 | 0.76            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.70 | 0.69            | 0.01 
+Epoch 37 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 37:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.71 | 0.71            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 38 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 38:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.74 | 0.74            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 39 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 39:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.70 | 0.70            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.73 | 0.71            | 0.01 
+Epoch 40 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 40:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.72 | 0.72            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 41 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 41:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.70 | 0.70            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.73 | 0.72            | 0.01 
+Epoch 42 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 42:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.66 | 0.66            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.74 | 0.73            | 0.01 
+Epoch 43 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 43:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.68 | 0.68            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 44 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 44:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.74 | 0.74            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.70 | 0.68            | 0.01 
+Epoch 45 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 45:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.75 | 0.75            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 46 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 46:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.76 | 0.76            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 47 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 47:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.74            | 0.00 
+generator (test)       | 0.73 | 0.73            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+Epoch 48 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 48:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.71 | 0.71            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 49 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 49:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.74 | 0.73            | 0.00 
+generator (test)       | 0.72 | 0.72            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.72 | 0.71            | 0.01 
+Epoch 50 of 50
+599/600 [============================>.] - ETA: 0s  
+Testing for epoch 50:
+component              | loss | generation_loss | auxiliary_loss
+-----------------------------------------------------------------
+generator (train)      | 0.73 | 0.73            | 0.00 
+generator (test)       | 0.77 | 0.77            | 0.00 
+discriminator (train)  | 0.71 | 0.69            | 0.02 
+discriminator (test)   | 0.71 | 0.70            | 0.01 
+
